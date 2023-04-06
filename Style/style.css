@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0 ;
+}
+h2{
+    color: rgb(16, 228, 204 );
+}
+.presentacionEmpresa{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+.presentacionEmpresa img{
+    width: 90vw;
+}
