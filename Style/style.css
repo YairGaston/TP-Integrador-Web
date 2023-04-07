@@ -5,74 +5,112 @@
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
 }
+:root{
+    --casiBlanco: aliceblue;
+    --temaVerde:rgb(16, 228, 204);
+    --casiNegro: rgba(35, 35, 35);
+    --temaVerdeHover: rgb(44, 161, 148);
+}
+/* ----- Comienza código css de Yair ----- */
 header{
-    height: 105px;
-    position: fixed;
-    /* float: left;
-    overflow:auto; */
     width: 100%;
-    background-color: rgba(35, 35, 35);
-    display: flex;
-    padding: 3vh 3vw;
-    align-items: center;
-    font-size: 16px;
-    
+    height: 100px;
 }
-.encabezado{
-    /* width: 100%; */
-    /* position: fixed; */
-    /* float: left; */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-    width: 100%;
-    margin: auto;
-    gap: 20px;
-    /* overflow:hidden; */
-    
-}
-.icono{
-    color: rgb(16, 228, 204 );
+.logo{
+    color:var(--temaVerde);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
     align-items: center;
     gap: 1em;
-    
     font-size: 1.25em;
 }
-.icono h2{
+.logo h2{
     font-weight:600;
     padding-bottom: 2%;
 }
-nav{
+.enlaces{
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.encabezadoFijo{
+    width: 100%;
+    height: 100px;
+    padding: 3vh 5vw;
+    background-color: var(--casiNegro);
+    position: fixed;
+    color: var(--temaVerde);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    gap: 1em;
 }
 a{
-    /* text-decoration: none; */
-    color: rgb(16, 228, 204 );
+    color: var(--temaVerde);
     font-size: 1em;
+    font-weight:lighter;
+}
+.textoNegrita{
+    font-weight:700;
 }
 .presentacionEmpresa{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 80px;
+    background-image: url(/img/jfbuinmo.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-shadow: 0 0 8px rgb(0, 0, 0,0.8);
+    font-size: 2.2rem;
+    color:var(--casiBlanco) ;
+    padding-top: 200px;
+    padding-bottom: 150px;
+    text-align:center ;
 }
-.imgRecortada{
-    margin-top: 105px;
-    width: 100vw;
-    /* clip-path: inset(20% 0 0 0); */
+p{
+    line-height: 2;
+    font-size: 20px;
+    font-weight:600;
+}
+.imgPresentacion{
+    width: 100%;
+}
+.btn-contactanos{
+    background-color: var(--temaVerde) ;
+    color: black;
+    font-size: 20px;
+    font-weight:700;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25) ;
+}
+.btn-contactanos:hover{
+    
+    transition: 0.5s ease-in-out;
+    background-color: var(--temaVerdeHover);
+    color: var(--casiBlanco);
+}
+.cobertor{
+    background-color: var(--temaVerde);
+    width: 100%;
+    height: 100%;
 }
 
 
 
 
 
-
+/* Media Querys */
 @media screen and (max-width: 920px ){
     header{
         font-size: 12px;
@@ -80,6 +118,9 @@ a{
     .favicon{
         width: 42px;
         height: 22px;
+    }
+    .presentacionEmpresa h2{
+        font-size: 2rem;
     }
 }
 @media screen and (max-width: 730px ){
@@ -90,4 +131,9 @@ a{
         width: 38px;
         height: 18px;
     }
+    .presentacionEmpresa h2{
+        font-size: 1rem;
+    }
 }
+
+/* ----- Termina código css de Yair ----- */
