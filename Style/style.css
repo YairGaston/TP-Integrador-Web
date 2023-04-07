@@ -10,6 +10,7 @@
     --temaVerde:rgb(16, 228, 204);
     --casiNegro: rgba(35, 35, 35);
     --temaVerdeHover: rgb(44, 161, 148);
+    --temaVerdeTransparente: rgb(16, 228, 204,30%);
 }
 /* ----- Comienza código css de Yair ----- */
 header{
@@ -101,7 +102,7 @@ p{
     color: var(--casiBlanco);
 }
 .cobertor{
-    background-color: var(--temaVerde);
+    background-color: var(--temaVerdeTransparente);
     width: 100%;
     height: 100%;
 }
