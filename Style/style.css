@@ -1,15 +1,80 @@
 *{
+    padding: 0;
     margin: 0;
-    padding: 0 ;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
-h2{
+.icono h2{
+    font-weight:600;
+    padding-bottom: 2%;
+}
+.icono{
     color: rgb(16, 228, 204 );
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    gap: 1em;
+    font-size: 1.25em;
 }
 .presentacionEmpresa{
-    margin-top: 5rem;
+    margin-top: 0px;
     display: flex;
     justify-content: center;
 }
 .presentacionEmpresa img{
-    width: 90vw;
+    width: 100vw;
+    clip-path: inset(0 0 20% 0);
+}
+header{
+    
+    background-color: rgb(35,35,35);
+    display: flex;
+    padding: 3vh 3vw;
+    align-items: center;
+    font-size: 16px;
+    /* position: fixed; */
+   
+}
+.encabezado{
+    /* position: fixed; */
+    /* float: left; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    gap: 20px;
+    /* overflow:hidden; */
+}
+nav{
+    display: flex;
+    gap: 20px;
+}
+a{
+    text-decoration: none;
+    color: rgb(16, 228, 204 );
+    font-size: 1em;
+}
+@media screen and (max-width: 900px ){
+    header{
+        font-size: 12px;
+    }
+    .favicon{
+        width: 42px;
+        height: 22px;
+    }
+}
+@media screen and (max-width: 730px ){
+    header{
+        font-size: 10px;
+    }
+    .favicon{
+        width: 38px;
+        height: 18px;
+    }
 }
