@@ -3,41 +3,23 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-}
-.icono h2{
-    font-weight:600;
-    padding-bottom: 2%;
-}
-.icono{
-    color: rgb(16, 228, 204 );
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-    gap: 1em;
-    font-size: 1.25em;
-}
-.presentacionEmpresa{
-    margin-top: 0px;
-    display: flex;
-    justify-content: center;
-}
-.presentacionEmpresa img{
-    width: 100vw;
-    clip-path: inset(0 0 20% 0);
+    text-decoration: none;
 }
 header{
-    
-    background-color: rgb(35,35,35);
+    height: 105px;
+    position: fixed;
+    /* float: left;
+    overflow:auto; */
+    width: 100%;
+    background-color: rgba(35, 35, 35);
     display: flex;
     padding: 3vh 3vw;
     align-items: center;
     font-size: 16px;
-    /* position: fixed; */
-   
+    
 }
 .encabezado{
+    /* width: 100%; */
     /* position: fixed; */
     /* float: left; */
     display: flex;
@@ -50,17 +32,48 @@ header{
     margin: auto;
     gap: 20px;
     /* overflow:hidden; */
+    
+}
+.icono{
+    color: rgb(16, 228, 204 );
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    gap: 1em;
+    
+    font-size: 1.25em;
+}
+.icono h2{
+    font-weight:600;
+    padding-bottom: 2%;
 }
 nav{
     display: flex;
     gap: 20px;
 }
 a{
-    text-decoration: none;
+    /* text-decoration: none; */
     color: rgb(16, 228, 204 );
     font-size: 1em;
 }
-@media screen and (max-width: 900px ){
+.presentacionEmpresa{
+    display: flex;
+    justify-content: center;
+}
+.imgRecortada{
+    margin-top: 105px;
+    width: 100vw;
+    /* clip-path: inset(20% 0 0 0); */
+}
+
+
+
+
+
+
+@media screen and (max-width: 920px ){
     header{
         font-size: 12px;
     }
