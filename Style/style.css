@@ -5,14 +5,43 @@
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
 }
+
 :root{
     --casiBlanco: aliceblue;
     --temaVerde:rgb(16, 228, 204);
     --casiNegro: rgba(35, 35, 35);
-    --temaVerdeHover: rgb(44, 161, 148);
+    --temaVerdeHover: rgb(225, 23, 68);
+    --temaRosa: rgb(225, 23, 68);
     --temaVerdeTransparente: rgb(16, 228, 204,30%);
 }
 /* ----- Comienza código css de Yair ----- */
+
+.delFooter1{
+    position: absolute;
+    right:3rem;
+    margin-top: 1rem;
+}
+.delFooter{
+    position: absolute;
+    right:3rem;
+    margin-top: 5rem;
+}
+footer{
+    text-align: center;
+    height: 250px;
+    background: var(--casiNegro);
+}
+footer p{
+    
+    padding-top: 17vh ;
+    color: var(--casiBlanco);
+    font-weight:lighter;
+    font-size: 1rem;
+}
+body{
+    background-color: whitesmoke;
+    font-size: 16px;
+}
 header{
     width: 100%;
     height: 100px;
@@ -52,6 +81,7 @@ header{
     align-content: center;
     align-items: center;
     gap: 1em;
+    z-index: 1;
 }
 a{
     color: var(--temaVerde);
@@ -66,7 +96,82 @@ a{
     flex-wrap: wrap;
     flex-direction: column;
     gap: 80px;
-    background-image: url(/img/jfbuinmo.jpg);
+    background-image: url(/img/imgPresentacion.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-shadow: 0 0 8px rgb(0, 0, 0,0.8);
+    font-size: 2.2rem;
+    color:var(--casiBlanco) ;
+    padding-top: 200px;
+    padding-bottom: 150px;
+    text-align:center ;
+    box-shadow: 0px 6px 11px 5px rgba(0, 0, 0, 0.25);
+}
+p{
+    line-height: 2;
+    font-size: 20px;
+    font-weight:600;
+}
+.imgPresentacion{
+    width: 100%;
+}
+.btn-verde{
+    background-color: var(--temaVerde) ;
+    color: black;
+    font-size: 1rem;
+    font-weight:600;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25) ;
+    text-shadow: none;
+}
+.btn-verde:hover{
+    
+    transition: 0.5s ease-in-out;
+    background-color: var(--temaRosa);
+    color: var(--casiBlanco);
+}
+.btn-rosa{
+    background-color: var(--temaRosa) ;
+    color: var(--casiBlanco);
+    font-size: 1rem;
+    font-weight:600;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25) ;
+    text-shadow: none;
+}
+.btn-rosa:hover{
+    
+    transition: 0.5s ease-in-out;
+    background-color: var(--temaVerde);
+    color: var(--casiNegro);
+}
+.botonConBorde{
+    padding: 6px;
+    border: 1px solid var(--temaVerde);
+    border-radius: 10px;
+}
+a{
+    padding: 7px;
+    border: px solid var(--temaVerde);
+    border-radius: 10px;
+}
+a:hover{
+    transition: 0.5s ease-in-out;
+    background-color: var(--temaVerdeTransparente);
+    color: var(--casiBlanco);
+}
+.nosotros{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 80px;
+    box-shadow: 0px 6px 11px 5px rgba(0, 0, 0, 0.25);
+    background-image: url(/img/imgNosotros.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -77,37 +182,164 @@ a{
     padding-bottom: 150px;
     text-align:center ;
 }
-p{
-    line-height: 2;
-    font-size: 20px;
-    font-weight:600;
-}
-.imgPresentacion{
-    width: 100%;
-}
-.btn-contactanos{
-    background-color: var(--temaVerde) ;
-    color: black;
-    font-size: 20px;
-    font-weight:700;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25) ;
-}
-.btn-contactanos:hover{
-    
-    transition: 0.5s ease-in-out;
-    background-color: var(--temaVerdeHover);
-    color: var(--casiBlanco);
-}
-.cobertor{
+.seccionColaboradores{
     background-color: var(--temaVerdeTransparente);
-    width: 100%;
-    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 2rem;
+}
+.seccionSoluciones{
+    background: linear-gradient(rgba(241, 241, 241, 0.5),rgba(241, 241, 241, 0.5)),url(/img/imgSoluciones.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 2rem;
+}
+.tituloColaboradores{
+    font-size: 2.5rem;
+    padding: 2rem;
+    color: rgb(7, 47, 105);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.containerColaboradores{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+    gap: 3rem;
+    /* text-shadow: 0 0 8px rgb(0, 0, 0,0.8); */
+    font-size: 2.2rem;
+    color:var(--casiNegro) ;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align:center ;
+}
+.colaborador1{
+    height: 410px;
+    width: 21rem;
+    background-color: var(--temaVerdeTransparente);
+    box-shadow: -3px 3px 7px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    color: var(--casiNegro);
+}
+.colaborador2{
+    height: 410px;
+    width: 21rem;
+    background-color:  rgba(245, 0, 87, 0.7);
+    box-shadow: -3px 3px 7px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+.colaborador3{
+    height: 410px;
+    width: 21rem;
+    background-color:  rgba(255, 193, 7, 0.7);
+    box-shadow: -3px 3px 7px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+.imgColaborador1{
+    
+    background-image: url(/img/Colaborador1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width:100%;
+    height: 192px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
+}
+.imgColaborador2{
+    background-image: url(/img/Colaborador2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+    width:100%;
+    height: 192px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
+}
+.imgColaborador3{
+    background-image: url(/img/Colaborador3.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width:100%;
+    height: 192px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
 }
 
+.imgSolucion1{
+    
+    background-image: url(/img/solucion1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width:100%;
+    height: 192px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
+}
+.imgSolucion2{
+    background-image: url(/img/solucion2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+    width:100%;
+    height: 192px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
+}
+.imgSolucion3{
+    background-image: url(/img/solucion3.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width:100%;
+    height: 192px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
+}
 
+.seccionOficinas{
+    background-color: var(--temaVerdeTransparente);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 2rem;
+}
+iframe{
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+}
+.nombreColaborador{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.2rem;
+    /* line-height: 22px;
+    padding-bottom: 2rem; */
+}
+.aptitudesColaborador{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+   /*  line-height: 19px; */
+}
 
 
 
@@ -135,6 +367,7 @@ p{
     .presentacionEmpresa h2{
         font-size: 1rem;
     }
+
 }
 
 /* ----- Termina código css de Yair ----- */
