@@ -155,11 +155,26 @@ p{
     border: 1px solid var(--temaVerde);
     border-radius: 10px;
 }
-a{
+.enlaces a{
     padding: 7px;
+}
+a{
+    padding: 0px;
     border: px solid var(--temaVerde);
     border-radius: 10px;
 }
+
+.sobresalir :hover{
+    height: 55%;
+    transition: 0.5s ease-in-out;
+    /* width: 110%; */
+    border: 2px solid var(--casiBlanco);
+   /*  position:relative ;
+    top: -5%; */
+    left: -5%;
+}
+
+
 a:hover{
     transition: 0.5s ease-in-out;
     background-color: var(--temaVerdeTransparente);
@@ -341,6 +356,17 @@ iframe{
    /*  line-height: 19px; */
 }
 
+.Prueba{
+    background-image: url(https://i.ibb.co/whvLmZm/img-Nosotros.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+    width:100%;
+    height: 192px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
+}
 
 
 /* Media Querys */
