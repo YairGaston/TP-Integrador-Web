@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./FormStyle.css">
+    <title>FormularioTresPasos</title>
+</head>
+
+<header></header>
+<body>
+    <div class="tab1" id="paso1">
+        <h1>Con el fin de brindar una rápida respuesta y solución a nuestros clientes, le haremos algunas preguntas y le pediremos algunos datos:</h1>
+        <fieldset>
+          <legend>Usted necesita asistencia del tipo:</legend>
+          <label><input id="Presencial" type="radio" name="PresRem" value="Presencial" checked>Presencial</label>
+          <label><input id="Remota" type="radio" name="PresRem" value="Remota">Remota</label>
+        </fieldset>
+        <fieldset>
+          <legend>Caracter de la consulta:</legend>
+          <label><input id="Urgente" type="radio" name="UrgMod" value="Urgente" checked>Urgente</label>
+          <label><input id="Moderado" type="radio" name="UrgMod" value="Moderado">Moderado</label>
+        </fieldset>
+      <div class="profesional">
+          <label for="profesional">Elija al profesional de su conveniencia :</label>
+          <select name="profesional" id="profesional">
+              <option disabled selected>Selecciona una opcion</option>
+              <option value="Pepito Suarez">Pepito Suarez</option>
+              <option value="Lara Cruz">Lara Cruz</option>
+              <option value="Anibal Pro">Anibal Pro</option>
+          </select>
+      </div>
+      <label for="fecha">Por favor, elija la fecha:</label>
+<input type="date" id="fecha" name="fecha">
+<hr>
+        <button class="btn" onclick="nextStep()">Siguiente</button>
+      </div>
+<hr>
+      <div class="tab2" id="paso2">
+        <h1>Solicitud de Cotización</h1>
+              <form class="SoliCotiz">
+          <div class="inputContainer">
+              <label for="nombre"></label>
+              <input type="text" id="nombre" name="nombre" placeholder="Nombre completo*">
+          </div>
+          <div class="inputContainer">
+              <label for="email"></label>
+              <input type="email" id="email" name="email" placeholder="Email*">
+          </div>
+          <div class="inputContainer">
+              <label for="contrasena"></label>
+              <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña*">
+          </div>
+          <div class="inputContainer">
+            <label for="TelContacto"></label>
+            <input type="tel" id="TelContacto" name="TelContacto" placeholder="Telefono de contacto*">
+          </div>
+          <div class="inputContainer">
+          <label for="Observaciones"></label>
+          <input type="text" id="Observaciones" name="Observaciones" placeholder="Observaciones*">
+             </div>
+          <div>
+            <h2>Las tarifas de nuestros servicios se facturan en Dólares, asi que le mostramos la cotización en tiempo real.</h2>
+          </div>         
+          <div class="Dolar"><!-- API externa --> </div> 
+          <div>
+              <label><input id="condiciones" type="radio" name="condiciones" >Acepto los términos y condiciones previamente pactadas</label>
+          </div> 
+            </form>
+<hr>   
+        <button class="btn" onclick="prevStep()">Anterior</button>
+        <button class="btn" onclick="nextStep()">Siguiente</button>
+      </div>
+<hr>
+      <div class="tab3" id="paso3">
+        <h1>Le agradecemos por confiar en “DevSRum¨ y en este equipo que estará a su disposición para la realización de sus proyectos.  </h1>
+       <div class="text">
+        <legend>Su solicitud se ha registrado con éxito. A la brevedad, nos estaremos poniendo en contacto.</legend>
+       </div>
+<hr>
+        <button class="btn" onclick="prevStep()">Anterior</button>
+        <button class="btn" onclick="submitForm()">Enviar</button>
+      </div>
+<hr>
+      <script src="./FormScript.js"></script>
+</body>
+    <main></main>
+
+    <footer></footer>
+
+</html>
