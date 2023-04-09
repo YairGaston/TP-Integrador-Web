@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 *{
     padding: 0;
     margin: 0;
@@ -33,17 +34,17 @@ body::-webkit-scrollbar-thumb:hover{
 .margenScrollNosotros{
     scroll-margin-top: 4ex;
 }
-/* ----- Comienza código css de Yair ----- */
+/* Colocar las media querys como variables para ahorrar código */
 
 .delFooter1{
     position: absolute;
     right:3rem;
-    margin-top: 1rem;
+    margin-top: -4rem;
 }
 .delFooter{
     position: absolute;
     right:3rem;
-    margin-top: 5rem;
+    margin-top: 0rem;
 }
 footer{
     text-align: center;
@@ -51,11 +52,11 @@ footer{
     background: var(--casiNegro);
 }
 footer p{
-    
-    padding-top: 21vh ;
+    position: relative;;
+    bottom: -50%;
     color: var(--casiBlanco);
     font-weight:lighter;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 body{
     background-color: whitesmoke;
@@ -78,6 +79,16 @@ header{
 .logo h2{
     font-weight:600;
     padding-bottom: 2%;
+}
+.btn-menu{
+    background-color: transparent;
+    border: none;
+    /* width: 40px;
+    height: 40px; */
+    /* border-radius: 5px; */
+    color: var(--temaVerde);
+    font-size: 25px;
+    display: none;
 }
 .enlaces{
     display: flex;
@@ -210,10 +221,7 @@ a{
 .sobresalir :hover{
     height: 55%;
     transition: 0.5s ease-in-out;
-    /* width: 110%; */
     border: 2px solid var(--casiBlanco);
-/*     position:relative ;
-    top: -5%; */
     left: -5%;
 }
 a:hover{
@@ -409,11 +417,35 @@ iframe{
     font-size: 1rem;
    /*  line-height: 19px; */
 }
+.iconos{
+    padding-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+.iconos img{
+    width: 40px;
+    height: 40px;
+    filter: drop-shadow(-2px 0px 8px var(--temaVerdeTransparente));
+}
+.iconos a{
+    background-color:transparent;
+}
+a img:hover{
+    height: 45px;
+    width: 45px;
+    transition: 0.5s ease-in-out;
+    filter: drop-shadow(-2px 0px 8px var(--temaVerde));
+}
 
 
 
 /* Media Querys */
-@media screen and (max-width: 920px ){
+@media screen and (max-width: 1300px ){
     header{
         font-size: 12px;
     }
@@ -421,14 +453,30 @@ iframe{
         font-size: 12px;
     }
     .favicon{
+        transition: 0.5s ease-in-out;
         width: 42px;
         height: 22px;
     }
     h2{
+        transition: 0.5s ease-in-out;
         font-size: 2rem;
     }
+    .encabezadoFijo{     
+        transition: 0.5s ease-in-out;   
+        height: 70px;
+    }
+    header{
+        transition: 0.5s ease-in-out;
+        height: 70px;
+    }
+    iframe{
+        transition: 0.5s ease-in-out;
+        height: 337,5px;
+        width: 450px;
+    }
+    
 }
-@media screen and (max-width: 730px ){
+@media screen and (max-width: 930px ){
     header{
         font-size: 10px;
     }
@@ -436,11 +484,38 @@ iframe{
         font-size: 10px;
     }
     .favicon{
+        transition: 0.5s ease-in-out;
         width: 38px;
         height: 18px;
     }
     h2{
-        font-size: 1rem;
+        transition: 0.5s ease-in-out;
+        font-size: 1rem ;
+    }
+    .iconos{
+        transition: 0.5s ease-in-out;
+        width: 15rem;
+        padding-top: 3rem;
+        gap: 0.2rem;
+    }
+    .encabezadoFijo{   
+        transition: 0.5s ease-in-out;     
+        height: 50px;
+    }
+    header{
+        transition: 0.5s ease-in-out;
+        height: 50px;
+    }
+    .enlaces{
+        display: none;
+    }
+    .btn-menu{
+        display: block;
+    }
+    iframe{
+        transition: 0.5s ease-in-out;
+        height: 225px;
+        width: 300px;
     }
 }
 /* ----- Termina código css de Yair ----- */
