@@ -1,37 +1,35 @@
 /* style del form 3 pasos :) */
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+}
 
 body {
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    background-color: #515197;
-    font-size: 16px;
-    padding: 0;
-  }
-   
-  h1 {
-    margin: 1em auto;
-    text-align: center, justify;
-    color: #040609;
-    font-family: Tahoma;
-    font-size: x-large;
-  }
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+div {
+  width: 100%;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  background-color: rgb(92, 92, 198);
+}
    
    
    
    
    /* Estilos para las pestañas */
   
-        .tab1, .tab2, .tab3 {
-          width: 100%;
-          height: 100%;
-          padding-left: 30px;
-          padding-right: 30px;
-          padding-bottom: 50px;
-          padding-top: 40px;
-        }
-  
+
         .tab2, .tab3 {
           display: none;
         }
