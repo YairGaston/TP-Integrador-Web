@@ -1,5 +1,3 @@
-/* style del form 3 pasos :) */
-
 * {
   padding: 0;
   margin: 0;
@@ -8,23 +6,147 @@
   text-decoration: none;
 }
 
+/* HEADER */
+header{
+  width: 100%;
+  height: 6.25rem;
+}
+.logo{
+  color:var(--temaVerde);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.logo a{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+.logo h2{
+  color:var(--temaVerde);
+  font-weight:600;
+  padding-bottom: 2%;
+  font-size: 1.875rem;
+}
+.btn-menu{
+  background-color: transparent;
+  border: none;
+  color: var(--temaVerde);
+  font-size: 32px;
+  display: none;
+}
+.enlaces{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.enlaces .botonConBorde{
+  padding: .5em;
+  border: 1px solid var(--temaVerde);
+  border-radius: .625rem;
+}
+.enlaces a{
+  color: var(--temaVerde);
+  font-size: 1rem;
+  font-weight:lighter;
+  padding: .5em;
+  border: px solid var(--temaVerde);
+  border-radius: .625rem;
+}
+.enlaces a:hover{
+  transition: 0.5s ease-in-out;
+  background-color: var(--temaVerdeTransparente);
+  color: var(--casiBlanco);
+}
+.enlaces .textoNegrita{
+  font-weight:700;
+}
+.encabezadoFijo{
+  width: 100%;
+  height: 6.25rem;
+  padding: 3vh 5vw;
+  background-color: var(--casiNegro);
+  position: fixed;
+  color: var(--temaVerde);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  gap: 1em;
+  z-index: 1;
+}
+
+/* fOOTER */
+.delFooter1{
+  position: absolute;
+  right:3rem;
+  margin-top: -4rem;
+}
+.delFooter{
+  position: absolute;
+  right:3rem;
+  margin-top: 1.5rem;
+}
+footer{
+  text-align: center;
+  height: 15.5rem;
+  background: var(--casiNegro);
+}
+footer p{
+  position: relative;;
+  bottom: -6.25rem;
+  color: var(--casiBlanco);
+  font-weight:lighter;
+  font-size: 0.8rem;
+}
+.iconos{
+  padding-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 1rem;
+
+}
+.iconos img{
+  width: 4rem;
+  height: 4rem;
+  /* filter: drop-shadow(-2px 0px 8px var(--temaVerdeTransparente)); */
+}
+.iconos a{
+  background-color:transparent;
+}
+.iconos a img:hover{
+  height: 5rem;
+  width: 5rem;
+  transition: 0.5s ease-in-out;
+  filter: drop-shadow(-2px 0px 8px var(--temaVerde));
+}
+
+/* style del form 3 pasos :) */
+
+
+/* 
 body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 5rem;
   width: 100%;
   height: 100%;
   background-color: #fff;
 }
-
-div {
-  width: 100%;
-  height: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 20px;
-  padding-top: 30px;
-  background-color: rgb(92, 92, 198);
-}
-   
-   
+ */
    
    
    /* Estilos para las pestañas */
