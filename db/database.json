@@ -1,0 +1,29 @@
+[
+    {
+        "nombre": "Yair Sansó",
+        "aptitud1": "Desarrollador ",
+        "aptitud2":"Web FullStack....",
+        "urlImgCircular": "../img/imgColab1.jpg",
+        "detalle1": "Me gustan los deportes extremos y andar en cayak.",
+        "detalle2": "Suelo llevar mi notebook a mis viajes para no dejar escapar una nueva idea.",
+        "hobbies": "Mis hobbies: Ciclismo, Viajar, krav maga."
+    },
+    {
+        "nombre": "Jesica Antonin",
+        "aptitud1": "Desarrollador de software",
+        "aptitud2":"Desarrollador Web FullStack",
+        "urlImgCircular": "../img/imgColab1.jpg",
+        "detalle1": "Me gustan los deportes extremos y andar en cayak.",
+        "detalle2": "Suelo llevar mi notebook a mis viajes para no dejar escapar una nueva idea.",
+        "hobbies": "Mis hobbies: Ciclismo, Viajar, krav maga."
+    },
+    {
+        "nombre": "Yair hdhd",
+        "aptitud1": "Desarrollador de software",
+        "aptitud2":"Desarrollador Web FullStack",
+        "urlImgCircular": "../img/imgColab1.jpg",
+        "detalle1": "Me gustan los deportes extremos y andar en cayak.",
+        "detalle2": "Suelo llevar mi notebook a mis viajes para no dejar escapar una nueva idea.",
+        "hobbies": "Mis hobbies: Ciclismo, Viajar, krav maga."
+    }
+]
