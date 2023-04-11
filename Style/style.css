@@ -77,12 +77,12 @@ body::-webkit-scrollbar-thumb:hover{
 /* fOOTER */
 .delFooter1{
     position: absolute;
-    right:5rem;
+    right:3rem;
     margin-top: -4rem;
 }
 .delFooter{
     position: absolute;
-    right:5rem;
+    right:3rem;
     margin-top: 1.5rem;
 }
 footer{
