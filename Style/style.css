@@ -9,11 +9,12 @@
 }
 :root{
     --casiBlanco: aliceblue;
-    --temaVerde:rgb(16, 228, 204);
+    --CasiBlancoTransparente: rgba(253,253,253,70%);
+    --temaVerde: rgba(7, 47, 105,1);
     --casiNegro: rgba(35, 35, 35);
     --temaVerdeHover: rgb(225, 23, 68);
     --temaRosa: rgb(225, 23, 68);
-    --temaVerdeTransparente: rgb(16, 228, 204,70%);
+    --temaVerdeTransparente: rgb(7, 47, 105,70%);
     --temaVerdeFondo: rgb(207, 249, 245,100%);
 }
 html{
@@ -42,7 +43,7 @@ body::-webkit-scrollbar-thumb:hover{
 /* bOTONES */
 .btn-verde{
     background-color: var(--temaVerde) ;
-    color: black;
+    color: var(--casiBlanco);
     font-size: 1.2rem;
     font-weight:600;
     padding: 0.5em;
@@ -50,12 +51,14 @@ body::-webkit-scrollbar-thumb:hover{
     border: none;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25) ;
     text-shadow: none;
+    text-shadow: 0 1px 10px rgb(0, 0, 0,1);
 }
 .btn-verde:hover{
     
     transition: 0.5s ease-in-out;
     background-color: var(--temaRosa);
     color: var(--casiBlanco);
+    transform: scale(1.1);
 }
 .btn-rosa{
     background-color: var(--temaRosa) ;
@@ -65,35 +68,36 @@ body::-webkit-scrollbar-thumb:hover{
     padding: 0.5em;
     border-radius: 0.63rem;
     border: none;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25) ;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     text-shadow: none;
+    text-shadow: 0 1px 10px rgb(0, 0, 0,1);
 }
 .btn-rosa:hover{
-    
+    transform: scale(1.1);
     transition: 0.5s ease-in-out;
     background-color: var(--temaVerde);
-    color: var(--casiNegro);
+    color: var(--casiBlanco);
 }
 
 /* fOOTER */
 .delFooter1{
     position: absolute;
-    right:3rem;
-    margin-top: -4rem;
+    left:3rem;
+    margin-top: -3rem;
 }
 .delFooter{
     position: absolute;
     right:3rem;
-    margin-top: 1.5rem;
+    margin-top: -3rem;
 }
 footer{
     text-align: center;
-    height: 15.5rem;
+    height: 10rem;
     background: var(--casiNegro);
 }
 footer p{
-    position: relative;;
-    bottom: -6.25rem;
+    position: relative;
+    top: 1.5rem;
     color: var(--casiBlanco);
     font-weight:lighter;
     font-size: 0.8rem;
@@ -109,18 +113,20 @@ footer p{
 
 }
 .iconos img{
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     /* filter: drop-shadow(-2px 0px 8px var(--temaVerdeTransparente)); */
 }
 .iconos a{
     background-color:transparent;
+    filter: drop-shadow(0px 0px 1px var(--casiBlanco));
 }
 .iconos a img:hover{
-    height: 5rem;
-    width: 5rem;
+    /* height: 5rem;
+    width: 5rem; */
     transition: 0.5s ease-in-out;
-    filter: drop-shadow(-2px 0px 8px var(--temaVerde));
+    filter: drop-shadow(-2px 0px 8px var(--temaRosa));
+    transform: scale(1.2);
 }
 
 /* HEADER */
@@ -129,7 +135,7 @@ header{
     height: 6.25rem;
 }
 .logo{
-    color:var(--temaVerde);
+    color:var(--temaRosa);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -145,7 +151,7 @@ header{
     gap: 1.25rem;
 }
 .logo h2{
-    color:var(--temaVerde);
+    color:var(--temaRosa);
     font-weight:600;
     padding-bottom: 2%;
     font-size: 1.875rem;
@@ -153,7 +159,7 @@ header{
 .btn-menu{
     background-color: transparent;
     border: none;
-    color: var(--temaVerde);
+    color: var(--temaRosa);
     font-size: 32px;
     display: none;
 }
@@ -167,11 +173,11 @@ header{
 }
 .enlaces .botonConBorde{
     padding: .5em;
-    border: 1px solid var(--temaVerde);
+    border: 1px solid var(--temaRosa);
     border-radius: .625rem;
 }
 .enlaces a{
-    color: var(--temaVerde);
+    color: var(--temaRosa);
     font-size: 1rem;
     font-weight:lighter;
     padding: .5em;
@@ -181,8 +187,10 @@ header{
 }
 .enlaces a:hover{
     transition: 0.5s ease-in-out;
-    background-color: var(--temaVerdeTransparente);
+    /* background-color: var(--temaVerdeTransparente); */
+    filter: drop-shadow(0px 0px 15px var(--temaRosa));
     color: var(--casiBlanco);
+    transform: scale(1.1);
 }
 .enlaces .textoNegrita{
     font-weight:700;
@@ -217,21 +225,24 @@ header{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    text-shadow: 0 0 8px rgb(0, 0, 0,0.8);
+    text-shadow: 0 1px 10px rgb(0, 0, 0,1);
     font-size: 2.2rem;
     color:var(--casiBlanco) ;
-    padding-top: 11.1rem;
-    padding-bottom: 9.3rem;
+    padding-top: 5.1rem;
+    padding-bottom: 8.1rem;
     text-align:center ;
 }
 .presentacionEmpresa p{
     line-height: 2;
-    font-size: 1.5rem;
-    font-weight:normal;
-}
-.presentacionEmpresa h2{
     font-size: 2rem;
+    font-weight:normal;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.presentacionEmpresa h1{
+    font-size: 2em;
     font-weight:bold;
+    text-shadow: 0 1px 10px rgb(0, 0, 0,1);
 }
 
 
@@ -242,20 +253,23 @@ header{
     margin-left: 7vw;
     font-weight:bold;
     font-size: 2rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
     padding: 2rem;
     color: rgba(7, 47, 105,1);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);   
+    /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);   */ 
+    text-shadow: 0 0 8px rgba(214, 211, 211, 0.8);
 }
 .nosotros p{
     position: relative;
-    margin-left: 5vw;
-    max-width: 38rem;
+    margin-left: 15vw;
+    margin-right: 2rem;
+    max-width: 50rem;
     line-height: 2;
     font-size: 1.5rem;
     font-weight:600;
-    text-shadow: 0 0 8px rgb(0, 0, 0,0.8);
+    text-shadow: 0 0 8px rgba(214, 211, 211, 0.8);
     text-align: center;
+    color: rgba(7, 47, 105,1);
 }
 .botonContactenosDeNosotros{
     position: relative;
@@ -268,12 +282,11 @@ header{
     justify-content: center;
     gap: 4vh;
     box-shadow: 0px 6px 11px 5px rgba(0, 0, 0, 0.25);
-    background-image:  url(https://i.ibb.co/whvLmZm/img-Nosotros.png);
+    background-image: linear-gradient(rgba(241, 241, 241, 0.5),rgba(241, 241, 241, 0.5)), url(https://i.ibb.co/whvLmZm/img-Nosotros.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    color:var(--casiBlanco) ;
-    padding-bottom: 9.4rem;
+    padding-bottom: 5.4rem;
 }
 .seccionNosotros{
     font-size: 2rem;
@@ -321,25 +334,27 @@ header{
 .colaborador1{
     height: 33rem;
     width: 25rem;
-    background-color: var(--temaVerdeTransparente);
+    background-color: var(--CasiBlancoTransparente);
     box-shadow: -3px 3px 7px 3px rgba(0, 0, 0, 0.25);
     border-radius: 1rem;
-    color: var(--casiNegro);
+    color: var(--temaVerde);
     
 }
 .colaborador2{
     height: 33rem;
     width: 25rem;
-    background-color:  rgba(245, 0, 87, 0.7);
+    background-color: var(--CasiBlancoTransparente);
     box-shadow: -3px 3px 7px 3px rgba(0, 0, 0, 0.25);
     border-radius: 1rem;
+    color: var(--temaVerde);
 }
 .colaborador3{
     height: 33rem;
     width: 25rem;
-    background-color:  rgba(255, 193, 7, 0.7);
+    background-color: var(--CasiBlancoTransparente);
     box-shadow: -3px 3px 7px 3px rgba(0, 0, 0, 0.25);
     border-radius: 1rem;
+    color: var(--temaVerde);
 }
 .imgColaborador1{
     
@@ -351,17 +366,18 @@ header{
     height: 15rem;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 1rem;
+    margin-bottom: 2rem;
 }
 .imgColaborador2{
     background-image: url(https://i.ibb.co/4SsXNRb/Colaborador2.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    
     width:100%;
     height: 15rem;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 1rem;
+    margin-bottom: 2rem;
 }
 .imgColaborador3{
     background-image: url(https://i.ibb.co/rtN3ksH/Colaborador3.jpg);
@@ -372,11 +388,15 @@ header{
     height: 15rem;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 1rem;
+    margin-bottom: 2rem;
 }
 .nombreColaborador{
+    
     font-style: normal;
     font-weight: 800;
     font-size: 1.5rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
 }
 .aptitudesColaborador{
     padding-top: 0.5rem;
@@ -386,6 +406,8 @@ header{
     font-weight: 500;
     font-size: 1.2rem;
     line-height: 2rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 2rem;
 }
 .sobresalir :hover{
     height: 55%; 
@@ -396,8 +418,15 @@ header{
 
 /* Sección soluciones */
 
+.tituloSoluciones{
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 2rem;
+    color: rgb(7, 47, 105);
+    text-shadow: 0 0 8px rgba(214, 211, 211, 0.8);
+}
 .seccionSoluciones{
-    background: linear-gradient(rgba(241, 241, 241, 0.5),rgba(241, 241, 241, 0.5)),url(https://i.ibb.co/F8HywcY/img-Soluciones.jpg);
+    background: linear-gradient(rgba(241, 241, 241, 0.4),rgba(241, 241, 241, 0.4)),url(https://i.ibb.co/F8HywcY/img-Soluciones.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -420,6 +449,7 @@ header{
     height: 15rem;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 1rem;
+    margin-bottom: 2rem;
 }
 .imgSolucion2{
     background-image: url(https://i.ibb.co/VvXVyDV/solucion2.png);
@@ -430,6 +460,7 @@ header{
     height: 15rem;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 1rem;
+    margin-bottom: 2rem;
 }
 .imgSolucion3{
     background-image: url(https://i.ibb.co/C0ZGCHq/solucion3.jpg);
@@ -440,20 +471,24 @@ header{
     height: 15rem;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 1rem;
+    margin-bottom: 2rem;
 }
 .nombreSolucion{
     font-style: normal;
     font-weight: 800;
     font-size: 1.5rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .descripcionSolucion{
-    padding-top: 0.5rem;
+    
+    padding-top: 1.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
     font-style: normal;
     font-weight: 500;
     font-size: 1.2rem;
     line-height: 2rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Sección oficinas */
@@ -533,9 +568,11 @@ iframe{
     }
     .iconos{
         transition: 0.5s ease-in-out;
-        width: 30rem;
-        padding-left: 3rem;
-        padding-top: 3rem;
+        /* width: 30rem; */
+        /* padding-left: 3rem; */
+        padding-top: 7rem;
+        padding-bottom: 1rem;
+        
     }
     .encabezadoFijo{   
         transition: 0.5s ease-in-out;     
@@ -555,5 +592,18 @@ iframe{
         transition: 0.5s ease-in-out;
         height: 225px;
         width: 300px;
+    }
+    footer{
+        height: 15rem;
+    }
+    .delFooter1{
+        
+        left:2rem;
+        margin-top: -9rem;
+    }
+    .delFooter{
+        
+        right:2rem;
+        margin-top: -9rem;
     }
 }

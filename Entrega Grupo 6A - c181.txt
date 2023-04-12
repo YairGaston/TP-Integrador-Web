@@ -16,3 +16,8 @@ https://github.com/YairGaston/TP-Integrador-Web
 Yair Sansó <ygsanso@gmail.com>,
 JESICA VANINA ANTONIN <antonin.jesica.ja@gmail.com>,
 GUSTAVO SAUL MULLER <gm679584@gmail.com>,
+
+-----Observaciones-----
+
+JavaScript utilizado en portfolios y página de form en 3 pasos.
+12.04.23 - se cambia del modo verde claro al rosa/rojo.
