@@ -38,6 +38,7 @@ body::-webkit-scrollbar-thumb:hover{
 }
 /* Colocar las media querys como variables para ahorrar código */
 
+
 /* bOTONES */
 .btn-verde{
     background-color: var(--temaVerde) ;
