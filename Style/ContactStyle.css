@@ -7,7 +7,71 @@
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
 }
+:root{
+    --casiBlanco: aliceblue;
+    --temaVerde:rgb(16, 228, 204);
+    --casiNegro: rgba(35, 35, 35);
+    --temaVerdeHover: rgb(225, 23, 68);
+    --temaRosa: rgb(225, 23, 68);
+    --temaVerdeTransparente: rgb(16, 228, 204,70%);
+    --temaVerdeFondo: rgb(207, 249, 245,100%);
+}
+html{
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar{
+    width:  15px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: rgba(35, 35, 35, 0.5);
+    
 
+}
+body::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(35, 35, 35);
+}
+.margenScroll{
+    scroll-margin-top: 11ex;
+}
+.margenScrollNosotros{
+    scroll-margin-top: 4ex;
+}
+
+/* bOTONES */
+.btn-verde{
+    background-color: var(--temaVerde) ;
+    color: black;
+    font-size: 1.2rem;
+    font-weight:600;
+    padding: 0.5em;
+    border-radius: 0.63rem;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25) ;
+    text-shadow: none;
+}
+.btn-verde:hover{
+    
+    transition: 0.5s ease-in-out;
+    background-color: var(--temaRosa);
+    color: var(--casiBlanco);
+}
+.btn-rosa{
+    background-color: var(--temaRosa) ;
+    color: var(--casiBlanco);
+    font-size: 1.2rem;
+    font-weight:600;
+    padding: 0.5em;
+    border-radius: 0.63rem;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25) ;
+    text-shadow: none;
+}
+.btn-rosa:hover{
+    
+    transition: 0.5s ease-in-out;
+    background-color: var(--temaVerde);
+    color: var(--casiNegro);
+}
 
 /* fOOTER */
 .delFooter1{
@@ -136,6 +200,10 @@ header{
     gap: 1em;
     z-index: 1;
 }
+
+
+
+
 /* Media Querys */
 @media screen and (max-width: 1300px ){
     html{

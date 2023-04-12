@@ -1,136 +1,285 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
-  text-decoration: none;
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+:root{
+    --casiBlanco: aliceblue;
+    --temaVerde:rgb(16, 228, 204);
+    --casiNegro: rgba(35, 35, 35);
+    --temaVerdeHover: rgb(225, 23, 68);
+    --temaRosa: rgb(225, 23, 68);
+    --temaVerdeTransparente: rgb(16, 228, 204,70%);
+    --temaVerdeFondo: rgb(207, 249, 245,100%);
+}
+html{
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar{
+    width:  15px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: rgba(35, 35, 35, 0.5);
+    
+
+}
+body::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(35, 35, 35);
+}
+.margenScroll{
+    scroll-margin-top: 11ex;
+}
+.margenScrollNosotros{
+    scroll-margin-top: 4ex;
 }
 
-/* HEADER */
-header{
-  width: 100%;
-  height: 6.25rem;
+/* bOTONES */
+.btn-verde{
+    background-color: var(--temaVerde) ;
+    color: black;
+    font-size: 1.2rem;
+    font-weight:600;
+    padding: 0.5em;
+    border-radius: 0.63rem;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25) ;
+    text-shadow: none;
 }
-.logo{
-  color:var(--temaVerde);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
+.btn-verde:hover{
+    
+    transition: 0.5s ease-in-out;
+    background-color: var(--temaRosa);
+    color: var(--casiBlanco);
 }
-.logo a{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  gap: 1.25rem;
+.btn-rosa{
+    background-color: var(--temaRosa) ;
+    color: var(--casiBlanco);
+    font-size: 1.2rem;
+    font-weight:600;
+    padding: 0.5em;
+    border-radius: 0.63rem;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25) ;
+    text-shadow: none;
 }
-.logo h2{
-  color:var(--temaVerde);
-  font-weight:600;
-  padding-bottom: 2%;
-  font-size: 1.875rem;
-}
-.btn-menu{
-  background-color: transparent;
-  border: none;
-  color: var(--temaVerde);
-  font-size: 32px;
-  display: none;
-}
-.enlaces{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  gap: 1em;
-}
-.enlaces .botonConBorde{
-  padding: .5em;
-  border: 1px solid var(--temaVerde);
-  border-radius: .625rem;
-}
-.enlaces a{
-  color: var(--temaVerde);
-  font-size: 1rem;
-  font-weight:lighter;
-  padding: .5em;
-  border: px solid var(--temaVerde);
-  border-radius: .625rem;
-}
-.enlaces a:hover{
-  transition: 0.5s ease-in-out;
-  background-color: var(--temaVerdeTransparente);
-  color: var(--casiBlanco);
-}
-.enlaces .textoNegrita{
-  font-weight:700;
-}
-.encabezadoFijo{
-  width: 100%;
-  height: 6.25rem;
-  padding: 3vh 5vw;
-  background-color: var(--casiNegro);
-  position: fixed;
-  color: var(--temaVerde);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  gap: 1em;
-  z-index: 1;
+.btn-rosa:hover{
+    
+    transition: 0.5s ease-in-out;
+    background-color: var(--temaVerde);
+    color: var(--casiNegro);
 }
 
 /* fOOTER */
 .delFooter1{
-  position: absolute;
-  right:3rem;
-  margin-top: -4rem;
+    position: absolute;
+    right:3rem;
+    margin-top: -4rem;
 }
 .delFooter{
-  position: absolute;
-  right:3rem;
-  margin-top: 1.5rem;
+    position: absolute;
+    right:3rem;
+    margin-top: 1.5rem;
 }
 footer{
-  text-align: center;
-  height: 15.5rem;
-  background: var(--casiNegro);
+    text-align: center;
+    height: 15.5rem;
+    background: var(--casiNegro);
 }
 footer p{
-  position: relative;;
-  bottom: -6.25rem;
-  color: var(--casiBlanco);
-  font-weight:lighter;
-  font-size: 0.8rem;
+    position: relative;;
+    bottom: -6.25rem;
+    color: var(--casiBlanco);
+    font-weight:lighter;
+    font-size: 0.8rem;
 }
 .iconos{
-  padding-top: 3rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  gap: 1rem;
+    padding-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 1rem;
 
 }
 .iconos img{
-  width: 4rem;
-  height: 4rem;
-  /* filter: drop-shadow(-2px 0px 8px var(--temaVerdeTransparente)); */
+    width: 4rem;
+    height: 4rem;
+    /* filter: drop-shadow(-2px 0px 8px var(--temaVerdeTransparente)); */
 }
 .iconos a{
-  background-color:transparent;
+    background-color:transparent;
 }
 .iconos a img:hover{
-  height: 5rem;
-  width: 5rem;
-  transition: 0.5s ease-in-out;
-  filter: drop-shadow(-2px 0px 8px var(--temaVerde));
+    height: 5rem;
+    width: 5rem;
+    transition: 0.5s ease-in-out;
+    filter: drop-shadow(-2px 0px 8px var(--temaVerde));
+}
+
+/* HEADER */
+header{
+    width: 100%;
+    height: 6.25rem;
+}
+.logo{
+    color:var(--temaVerde);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+.logo a{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+.logo h2{
+    color:var(--temaVerde);
+    font-weight:600;
+    padding-bottom: 2%;
+    font-size: 1.875rem;
+}
+.btn-menu{
+    background-color: transparent;
+    border: none;
+    color: var(--temaVerde);
+    font-size: 32px;
+    display: none;
+}
+.enlaces{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.enlaces .botonConBorde{
+    padding: .5em;
+    border: 1px solid var(--temaVerde);
+    border-radius: .625rem;
+}
+.enlaces a{
+    color: var(--temaVerde);
+    font-size: 1rem;
+    font-weight:lighter;
+    padding: .5em;
+    /* padding: 0px; */
+    border: px solid var(--temaVerde);
+    border-radius: .625rem;
+}
+.enlaces a:hover{
+    transition: 0.5s ease-in-out;
+    background-color: var(--temaVerdeTransparente);
+    color: var(--casiBlanco);
+}
+.enlaces .textoNegrita{
+    font-weight:700;
+}
+.encabezadoFijo{
+    width: 100%;
+    height: 6.25rem;
+    padding: 3vh 5vw;
+    background-color: var(--casiNegro);
+    position: fixed;
+    color: var(--temaVerde);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    gap: 1em;
+    z-index: 1;
+}
+
+
+
+
+/* Media Querys */
+@media screen and (max-width: 1300px ){
+    html{
+        font-size: 75%;
+    }
+    header{
+        font-size: 12px;
+    }
+    .favicon{
+        transition: 0.5s ease-in-out;
+        width: 42px;
+        height: 22px;
+    }
+    h2{
+        transition: 0.5s ease-in-out;
+        font-size: 2rem;
+    }
+    .encabezadoFijo{     
+        transition: 0.5s ease-in-out;   
+        height: 70px;
+    }
+    header{
+        transition: 0.5s ease-in-out;
+        height: 70px;
+    }
+    iframe{
+        transition: 0.5s ease-in-out;
+        height: 337,5px;
+        width: 450px;
+    }
+    
+}
+@media screen and (max-width: 930px ){
+    html{
+        font-size: 63%;
+    }
+    header{
+        font-size: 10px;
+    }
+    body{
+        font-size: 10px;
+    }
+    .favicon{
+        transition: 0.5s ease-in-out;
+        width: 38px;
+        height: 18px;
+    }
+    h2{
+        transition: 0.5s ease-in-out;
+        font-size: 1rem ;
+    }
+    .iconos{
+        transition: 0.5s ease-in-out;
+        width: 30rem;
+        padding-left: 3rem;
+        padding-top: 3rem;
+    }
+    .encabezadoFijo{   
+        transition: 0.5s ease-in-out;     
+        height: 50px;
+    }
+    header{
+        transition: 0.5s ease-in-out;
+        height: 50px;
+    }
+    .enlaces{
+        display: none;
+    }
+    .btn-menu{
+        display: block;
+    }
+    iframe{
+        transition: 0.5s ease-in-out;
+        height: 225px;
+        width: 300px;
+    }
 }
 
 /* style del form 3 pasos :) */
@@ -158,10 +307,10 @@ h1 {
   margin-right: 10px;
   margin-bottom: 20px;
   margin-left: 10px;
-  padding-top: 
-  padding-right: 
+/*   padding-top:  */
+ /*  padding-right: 
   padding-bottom: 
-  padding-left:
+  padding-left: */
 }
 .Urge {
   display: flex;
