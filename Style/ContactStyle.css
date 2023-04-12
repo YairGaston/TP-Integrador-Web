@@ -7,6 +7,90 @@
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
 }
+
+.btnEnviar{
+    background-color: var(--temaRosa) ;
+    color: var(--casiBlanco);
+    font-size: 1.2rem;
+    font-weight:600;
+    padding: 0.5em;
+    border-radius: 0.63rem;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25) ;
+    text-shadow: none;
+}
+.btnCancelar{
+    background-color: var(--temaRosa) ;
+    color: var(--casiBlanco);
+    font-size: 1.2rem;
+    font-weight:600;
+    padding: 0.5em;
+    border-radius: 0.63rem;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25) ;
+    text-shadow: none;
+}
+.btnExport{
+    background-color: var(--temaRosa) ;
+    color: var(--casiBlanco);
+    font-size: 1.2rem;
+    font-weight:600;
+    padding: 0.5em;
+    border-radius: 0.63rem;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25) ;
+    text-shadow: none;
+}
+.form-contacto{
+    width: 400px;
+    background: aliceblue;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(35, 35, 35);
+}
+.form-contacto h2{
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(16, 228, 204);
+}
+.controls{
+    width: 100%;
+    background: aliceblue;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid rgb(225, 23, 68);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+} 
+.datos{
+    font-size: 22px;
+    color: rgb(225, 23, 68);
+}
+
+/*Css Resumen*/
+.resumen{
+    width: 500px;
+    background: aliceblue;
+    padding: 50px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(35, 35, 35);
+}
+.resumen h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(16, 228, 204);
+}
+
+
 :root{
     --casiBlanco: aliceblue;
     --temaVerde:rgb(16, 228, 204);
@@ -199,24 +283,6 @@ header{
     align-items: center;
     gap: 1em;
     z-index: 1;
-}
-
-.div{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 5rem;
-    box-shadow: 0px 6px 11px 5px rgba(0, 0, 0, 0.25);
-    background-image: linear-gradient(rgba(94, 52, 52, 0.55),rgba(94, 52, 52, 0.55)), url(https://i.ibb.co/1KZ0s8S/img-Presentacion.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    text-shadow: 0 0 8px rgb(0, 0, 0,0.8);
-    font-size: 2.2rem;
-    color:var(--casiBlanco) ;
-    padding-top: 11.1rem;
-    padding-bottom: 9.3rem;
-    text-align:center ;
 }
 
 
