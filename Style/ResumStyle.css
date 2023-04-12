@@ -8,7 +8,10 @@
     text-decoration: none;
 }
 
-
+.h1exito{
+    color: brown;
+    display: flex;
+}
 /* fOOTER */
 .delFooter1{
     position: absolute;
