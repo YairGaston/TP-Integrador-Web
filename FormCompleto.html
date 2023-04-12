@@ -38,12 +38,12 @@
 <body>
     <div class="tab1" id="paso1">
         <h1>Con el fin de brindar una rápida respuesta y solución a nuestros clientes, le haremos algunas preguntas y le pediremos algunos datos:</h1>
-        <fieldset>
+        <fieldset class="Pres">
           <legend>Usted necesita asistencia del tipo:</legend>
           <label><input id="Presencial" type="radio" name="PresRem" value="Presencial" checked>Presencial</label>
           <label><input id="Remota" type="radio" name="PresRem" value="Remota">Remota</label>
         </fieldset>
-        <fieldset>
+        <fieldset class="Cons">
           <legend>Caracter de la consulta:</legend>
           <label><input id="Urgente" type="radio" name="UrgMod" value="Urgente" checked>Urgente</label>
           <label><input id="Moderado" type="radio" name="UrgMod" value="Moderado">Moderado</label>
@@ -52,13 +52,13 @@
           <label for="profesional">Elija al profesional de su conveniencia :</label>
           <select name="profesional" id="profesional">
               <option disabled selected>Selecciona una opcion</option>
-              <option value="Pepito Suarez">Pepito Suarez</option>
-              <option value="Lara Cruz">Lara Cruz</option>
-              <option value="Anibal Pro">Anibal Pro</option>
+              <option value="Yair">Yair</option>
+              <option value="Jesica">Jesica</option>
+              <option value="Gustavo">Gustavo</option>
           </select>
       </div>
-      <label for="fecha">Por favor, elija la fecha:</label>
-<input type="date" id="fecha" name="fecha">
+      <label class="Fech" for="fecha">Por favor, elija la fecha:</label>
+<input class="Fech" type="date" id="fecha" name="fecha">
 <hr>
         <button class="btn" onclick="nextStep()">Siguiente</button>
       </div>
@@ -67,24 +67,24 @@
         <h1>Solicitud de Cotización</h1>
               <form class="SoliCotiz">
           <div class="inputContainer">
-              <label for="nombre"></label>
-              <input type="text" id="nombre" name="nombre" placeholder="Nombre completo*">
+              <label for="nombre">Nombre Completo:</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido*">
           </div>
           <div class="inputContainer">
-              <label for="email"></label>
+              <label for="email">Correo Electrónico:</label>
               <input type="email" id="email" name="email" placeholder="Email*">
           </div>
           <div class="inputContainer">
-              <label for="contrasena"></label>
+              <label for="contrasena">Ingrese una Contraseña:</label>
               <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña*">
           </div>
           <div class="inputContainer">
-            <label for="TelContacto"></label>
-            <input type="tel" id="TelContacto" name="TelContacto" placeholder="Telefono de contacto*">
+            <label for="TelContacto">Teléfono de Contacto</label>
+            <input type="tel" id="TelContacto" name="TelContacto" placeholder="Número de Teléfono*">
           </div>
           <div class="inputContainer">
-          <label for="Observaciones"></label>
-          <input type="text" id="Observaciones" name="Observaciones" placeholder="Observaciones*">
+          <label for="Observaciones">Observaciones</label>
+          <input type="text" id="Observaciones" name="Observaciones" placeholder="Deje algún comentario*">
              </div>
           <div>
             <h2>Las tarifas de nuestros servicios se facturan en Dólares, asi que le mostramos la cotización en tiempo real.</h2>
