@@ -30,8 +30,8 @@
 
   body {
     width: 100vw;
-    height: 100vh;
-    background-color: rgb(170, 170, 248);
+    height: 90vh;
+    background-color: rgb(7, 47, 105,70%);
     margin: 0;
     font-size: 16px;
     padding: 0;
@@ -79,6 +79,23 @@
     margin-left: 30px;
     height: 5%;
   } 
+
+  /* pagina Dos */
+
+  .SoliCotiz {
+    width: 100vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+
+.inputContainer {
+    border: none;
+    padding: 1rem 0;
+    border-bottom: 1px solid #3b3b4f;
+    }
+      
 
    /* Estilos para el botón de siguiente */
         
