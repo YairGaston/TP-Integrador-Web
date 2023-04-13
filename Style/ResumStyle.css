@@ -7,12 +7,114 @@
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
 }
+
+.btnCancelar{
+    background-color: var(--temaRosa) ;
+    color: var(--casiBlanco);
+    font-size: 1.2rem;
+    font-weight:600;
+    padding: 0.5em;
+    border-radius: 0.63rem;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25) ;
+    text-shadow: none;
+}
+.btnExport{
+    background-color: var(--temaRosa) ;
+    color: var(--casiBlanco);
+    font-size: 1.2rem;
+    font-weight:600;
+    padding: 0.5em;
+    border-radius: 0.63rem;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25) ;
+    text-shadow: none;
+}
+
+.resumen{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background: aliceblue;
+    padding: 50px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(35, 35, 35);
+}
+.resumen h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(16, 228, 204);
+}
+.datos-finales h2{
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(225, 23, 68);
+}
+.controls{
+    width: 100%;
+    background: aliceblue;
+    padding: 8px;
+    border-radius: 2px;
+    margin-bottom: 14px;
+    border: 1px solid rgb(225, 23, 68);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+.ReservaExitosa h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(7, 47, 105,1);
+}
+.MinutaConsulta{
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(35, 35, 35);
+}
+.facturación{
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(225, 23, 68);
+}
+.reunion{
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(7, 47, 105,1);
+}
+.meet{
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(225, 23, 68);
+}
+.cancelar{
+    font-size: 12px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(7, 47, 105,1);
+}
+
 :root{
     --casiBlanco: aliceblue;
     --CasiBlancoTransparente: rgba(253,253,253,70%);
     --temaVerde: rgba(7, 47, 105,1);
     --casiNegro: rgba(35, 35, 35);
-    --temaVerdeHover: rgb(225, 23, 68);
     --temaRosa: rgb(225, 23, 68);
     --temaVerdeTransparente: rgb(7, 47, 105,70%);
     --temaVerdeFondo: rgb(207, 249, 245,100%);
@@ -39,25 +141,6 @@ body::-webkit-scrollbar-thumb:hover{
 }
 
 /* bOTONES */
-.btn-verde{
-    background-color: var(--temaVerde) ;
-    color: var(--casiBlanco);
-    font-size: 1.2rem;
-    font-weight:600;
-    padding: 0.5em;
-    border-radius: 0.63rem;
-    border: none;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25) ;
-    text-shadow: none;
-    text-shadow: 0 1px 10px rgb(0, 0, 0,1);
-}
-.btn-verde:hover{
-    
-    transition: 0.5s ease-in-out;
-    background-color: var(--temaRosa);
-    color: var(--casiBlanco);
-    transform: scale(1.1);
-}
 .btn-rosa{
     background-color: var(--temaRosa) ;
     color: var(--casiBlanco);
