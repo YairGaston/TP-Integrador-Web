@@ -96,6 +96,25 @@
     border-bottom: 1px solid #3b3b4f;
     }
       
+.NpagDos {
+    display: block;
+    margin: 0.5rem 0;
+    }    
+textarea {
+    border: 1px; 
+    color: rgb(207, 249, 245,100%);
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}    
+
+.MensTarifa {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 15px;
+}
+
 
    /* Estilos para el botón de siguiente */
         

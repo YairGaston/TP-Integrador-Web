@@ -43,13 +43,13 @@
         <h1>Con el fin de brindar una rápida respuesta y solución a nuestros clientes, le haremos algunas preguntas y le pediremos algunos datos:</h1>
         <fieldset class="Pres">
           <legend>Usted necesita asistencia del tipo:</legend>
-          <label><input id="Presencial" type="radio" name="PresRem" value="Presencial" checked>Presencial</label>
-          <label><input id="Remota" type="radio" name="PresRem" value="Remota">Remota</label>
+          <label><input id="Presencial" type="radio" name="PresRem" value="Presencial" checked required>Presencial</label>
+          <label><input id="Remota" type="radio" name="PresRem" value="Remota" required>Remota</label>
         </fieldset>
         <fieldset class="Cons">
           <legend>Caracter de la consulta:</legend>
-          <label><input id="Urgente" type="radio" name="UrgMod" value="Urgente" checked>Urgente</label>
-          <label><input id="Moderado" type="radio" name="UrgMod" value="Moderado">Moderado</label>
+          <label><input id="Urgente" type="radio" name="UrgMod" value="Urgente" checked required>Urgente</label>
+          <label><input id="Moderado" type="radio" name="UrgMod" value="Moderado" required>Moderado</label>
         </fieldset>
       <div class="profesional">
           <label for="profesional">Elija al profesional de su conveniencia :</label>
@@ -71,28 +71,30 @@
         <h1>Solicitud de Cotización</h1>
               <form class="SoliCotiz">
           <div class="inputContainer">
-              <label for="nombre">Nombre Completo:</label>
-              <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido*">
+              <label class="NpagDos" for="nombre">Nombre Completo:</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido*" required>
           </div>
           <div class="inputContainer">
-              <label for="email">Correo Electrónico:</label>
-              <input type="email" id="email" name="email" placeholder="Email*">
+              <label class="NpagDos" for="email">Correo Electrónico:</label>
+              <input type="email" id="email" name="email" placeholder="Email*" required>
           </div>
           <div class="inputContainer">
-              <label for="contrasena">Ingrese una Contraseña:</label>
-              <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña*">
+              <label class="NpagDos" for="contrasena">Ingrese una Contraseña:</label>
+              <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña*" pattern="[a-z0-5]{8,}" required>
           </div>
           <div class="inputContainer">
-            <label for="TelContacto">Teléfono de Contacto</label>
-            <input type="tel" id="TelContacto" name="TelContacto" placeholder="Número de Teléfono*">
+            <label class="NpagDos" for="TelContacto">Teléfono de Contacto</label>
+            <input type="tel" id="TelContacto" name="TelContacto" placeholder="Número de Teléfono*" required>
           </div>
-          <div class="inputContainer">
-          <label for="Observaciones">Observaciones</label>
-          <input type="text" id="Observaciones" name="Observaciones" placeholder="Deje algún comentario*">
-             </div>
+          
           <div>
-            <h2>Las tarifas de nuestros servicios se facturan en Dólares, asi que le mostramos la cotización en tiempo real.</h2>
-          </div>         
+            <h2 class="MensTarifa">Las tarifas de nuestros servicios se facturan en Dólares, asi que le mostramos la cotización en tiempo real.</h2>
+          </div>
+
+          <label for="Observaciones">Observaciones 
+             <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Deje su comentario"></textarea></label>
+          
+                  
           <div class="Dolar"><!-- API externa --> </div> 
           <div>
               <label><input id="condiciones" type="radio" name="condiciones" >Acepto los términos y condiciones previamente pactadas</label>
