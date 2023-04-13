@@ -22,14 +22,14 @@
           </a>
           </div>
 
-          <div class="enlaces">
-              <a class="botonConBorde" href="./pages/contacto.html">CONTÁCTANOS</a>
-              <a href="#nosotros">NOSOTROS</a>
-              <a href="#soluciones">SOLUCIONES</a>
-              <a href="#oficinas">OFICINAS</a>
-              <a class="textoNegrita" href="./FormCompleto.html">SOLICITAR REUNIÓN</a>
+          <div class="enlaces enlacesVisibles enlacesMenu" id="enlaces">
+              <a id="btn-contacto"  class="botonConBorde" href="./pages/contacto.html">CONTÁCTANOS</a>
+              <a id="btn-nosotros" href="./index.html#nosotros">NOSOTROS</a>
+              <a id="btn-soluciones" href="./index.html#soluciones">SOLUCIONES</a>
+              <a id="btn-oficinas"  href="./index.html#oficinas">OFICINAS</a>
+              <a id="btn-reunion" class="textoNegrita" href="./FormCompleto.html">SOLICITAR REUNIÓN</a>
           </div>
-          <button class="btn-menu">
+          <button class="btn-menu" id="btn-menu">
               <i class="bi bi-list"></i>
           </button>
       </div>
@@ -55,9 +55,9 @@
           <label for="profesional">Elija al profesional de su conveniencia :</label>
           <select name="profesional" id="profesional">
               <option disabled selected>Selecciona una opcion</option>
-              <option value="Yair">Yair</option>
-              <option value="Jesica">Jesica</option>
-              <option value="Gustavo">Gustavo</option>
+              <option value="Yair">Yair Sansó</option>
+              <option value="Jesica">Jesica Antonin</option>
+              <option value="Gustavo">Gustavo Müller</option>
           </select>
       </div>
       <label class="Fech" for="fecha">Por favor, elija la fecha:</label>
@@ -112,7 +112,7 @@
        </div>
 
         <button class="btnAnterior" onclick="prevStep()">Anterior</button>
-        <button class="btnEnviar" onclick="submitForm()">Enviar</button>
+        <a href="./pages/Resumen.html"> <button class="btnEnviar" onclick="submitForm()">Enviar</button></a>
       </div>
 </main>
 

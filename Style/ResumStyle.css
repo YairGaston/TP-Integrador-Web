@@ -38,11 +38,15 @@
     margin-bottom: 20px;
     margin-top: 20px;
 }
+main{
+    min-height: 90vh;
+}
 
 .resumen{
     display: flex;
     flex-direction: column;
-    width: 500px;
+    min-width: 300px;
+    max-width: 500px;
     background-color: cyan;
     padding: 50px;
     margin: auto;
@@ -355,7 +359,7 @@ header{
         /* padding-left: 3rem; */
         padding-top: 7rem;
         padding-bottom: 1rem;
-        
+    
     }
     .encabezadoFijo{   
         transition: 0.5s ease-in-out;     
@@ -365,12 +369,36 @@ header{
         transition: 0.5s ease-in-out;
         height: 50px;
     }
-    .enlaces{
-        display: none;
+/* ---------Para el manú de hamburguesa---------- */
+
+    .enlacesMenu{
+        background-color: var(--casiNegro);
+        border-radius: 0.63rem;
+        padding: 3rem;
+        position:absolute; 
+        right: 0rem;
+        display:flex;
+        margin-top: 30rem;
+        flex-wrap:wrap;
+        flex-direction: column;
+        justify-content:start; ;
+        align-items:end;
+        gap: 2rem;
+        font-weight:700;
+        box-shadow: -2px 2px 8px var(--casiNegro);
+        transition: 0.3s ease-in;
+    }
+    .enlacesVisibles{
+        transform: translate(100%, 0%);
+        visibility: hidden;
+        transition: 0.3s ease-in;
     }
     .btn-menu{
         display: block;
+        cursor: pointer;
     }
+/* ----------------------- */
+
     iframe{
         transition: 0.5s ease-in-out;
         height: 225px;

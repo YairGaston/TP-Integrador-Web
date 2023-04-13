@@ -9,10 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Style/ResumStyle.css">
     <link rel="icon" type="imagen/ico" href="../img/favicon.svg">
-    <title>Resumen de Formulario</title>
+    <title>DevScrum - Tu evolución, nuestra prioridad</title>
 </head>
 <body>
-    <header>
+    <header> 
         <nav>
             <div class="encabezadoFijo">
                 <div class="logo">
@@ -21,14 +21,14 @@
                     <h2 >DevScrum</h2>
                 </a>
                 </div>
-                <div class="enlaces">
-                    <a class="botonConBorde" href="./contacto.html">CONTÁCTANOS</a>
-                    <a href="../index.html#nosotros">NOSOTROS</a>
-                    <a href="../index.html#soluciones">SOLUCIONES</a>
-                    <a href="../index.html#oficinas">OFICINAS</a>
-                    <a class="textoNegrita" href="../FormCompleto.html">SOLICITAR REUNIÓN</a>
+                <div class="enlaces enlacesVisibles enlacesMenu" id="enlaces">
+                    <a id="btn-contacto"  class="botonConBorde" href="./contacto.html">CONTÁCTANOS</a>
+                    <a id="btn-nosotros" href="../index.html#nosotros">NOSOTROS</a>
+                    <a id="btn-soluciones" href="../index.html#soluciones">SOLUCIONES</a>
+                    <a id="btn-oficinas"  href="../index.html#oficinas">OFICINAS</a>
+                    <a id="btn-reunion" class="textoNegrita" href="../FormCompleto.html">SOLICITAR REUNIÓN</a>
                 </div>
-                <button class="btn-menu">
+                <button class="btn-menu" id="btn-menu">
                     <i class="bi bi-list"></i>
                 </button>
             </div>
@@ -54,7 +54,7 @@
             <label for="Telefono">Telefono</label>            
             <input class="controls" type="Telefono" name="Telefono" id="Telefono" placeholder="1156892456">
 
-            <label for="Correo">Email</label>            
+            <label for="Email">Email</label>            
             <input class="controls" type="Email" name="Email" id="Email" placeholder="gime_martinez@gmail.com">
         </div>
 
@@ -93,6 +93,7 @@
         
     </section>
     </main>
+    <script src="../Js/script.js"></script>
 </body>
 <footer>
     <div class="redesSociales">
@@ -108,4 +109,5 @@
     <a class="btn-rosa delFooter" href="../FormCompleto.html">Solicitar reunión</a>
     <p><strong> DevScrum</strong> ©️ 2023 Todos los derechos reservados.</p>
 </footer>
+
 </html>
