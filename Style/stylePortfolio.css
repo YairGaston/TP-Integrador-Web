@@ -300,6 +300,35 @@ header{
         right:2rem;
         margin-top: -9rem;
     }
+    /* ---------Para el manú de hamburguesa---------- */
+
+    .enlacesMenu{
+        background-color: var(--casiNegro);
+        border-radius: 0.63rem;
+        padding: 3rem;
+        position:absolute; 
+        right: 0rem;
+        display:flex;
+        margin-top: 30rem;
+        flex-wrap:wrap;
+        flex-direction: column;
+        justify-content:start; ;
+        align-items:end;
+        gap: 2rem;
+        font-weight:700;
+        box-shadow: -2px 2px 8px var(--casiNegro);
+        transition: 0.3s ease-in;
+    }
+    .enlacesVisibles{
+        transform: translate(100%, 0%);
+        visibility: hidden;
+        transition: 0.3s ease-in;
+    }
+    .btn-menu{
+        display: block;
+        cursor: pointer;
+    }
+/* ----------------------- */
 }
 
 

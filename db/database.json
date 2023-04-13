@@ -13,17 +13,17 @@
         "aptitud1": "Desarrollador de software",
         "aptitud2":"Diseñadora gráfica",
         "urlImgCircular": "../img/imgColab1.jpg",
-        "detalle1": "Me gustan los deportes extremos y andar en cayak.",
-        "detalle2": "Suelo llevar mi notebook a mis viajes para no dejar escapar una nueva idea.",
-        "hobbies": "Mis hobbies: Ciclismo, Viajar, krav maga."
+        "detalle1": "Me gusta pintar en mis viajes y sentarme a dibujar mientras tomo un café.",
+        "detalle2": "El echo de llevar mis diseños a un entorno virtual es fascinante!.",
+        "hobbies": "Mis hobbies: Dibujar, F1, Voleibol."
     },
     {
         "nombre": "Gustavo Müller",
         "aptitud1": "Desarrollador Web FullStack",
         "aptitud2":"Arquitecto de base de datos",
         "urlImgCircular": "../img/imgColab1.jpg",
-        "detalle1": "Me gustan los deportes extremos y andar en cayak.",
-        "detalle2": "Suelo llevar mi notebook a mis viajes para no dejar escapar una nueva idea.",
-        "hobbies": "Mis hobbies: Ciclismo, Viajar, krav maga."
+        "detalle1": "Me gusta salir con amigos y tocar el bajo en nuestra banda.",
+        "detalle2": "Utilizo mis breaks para pensar como diseñar mejor las relasiones entre los datos.",
+        "hobbies": "Mis hobbies: Natación, Música, Conocer nuevos lugares."
     }
 ]
