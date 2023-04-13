@@ -67,28 +67,10 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
 } 
-.datos{
-    font-size: 22px;
-    color: rgb(225, 23, 68);
-}
 
-/*Css Resumen*/
-.resumen{
-    width: 500px;
-    background: aliceblue;
-    padding: 50px;
-    margin: auto;
-    margin-top: 100px;
-    border-radius: 5px;
-    font-family: 'Open Sans', sans-serif;
-    color: rgba(35, 35, 35);
-}
-.resumen h1{
-    font-size: 30px;
-    margin-bottom: 20px;
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(16, 228, 204);
-}
+
+
+
 
 
 :root{
