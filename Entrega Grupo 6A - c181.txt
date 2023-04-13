@@ -19,5 +19,5 @@ GUSTAVO SAUL MULLER <gm679584@gmail.com>,
 
 -----Observaciones-----
 
-JavaScript utilizado en portfolios y página de form en 3 pasos.
-12.04.23 - se cambia del modo verde claro al rosa/rojo.
+JavaScript utilizado en portfolios, botón de menú y página de form en 3 pasos.
+12.04.23 - se cambia del modo verde claro al rosa/rojo, minimalizan las dimensiones según sugerencia del profesor.

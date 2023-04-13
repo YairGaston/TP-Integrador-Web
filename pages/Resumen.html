@@ -39,28 +39,32 @@
 
         <h1>Su solicitud fue exitosa</h1>
         
-        <div>
-        <h2>Datos Personales:</h2>
+        <div class="datos-finales">
+            <h2>Datos Personales:</h2>
         
-            <a class="datos" href="Nombre">Nombre</a>
-            <input class="controls" type="text" name="Nombre" id="Nombre" placeholder="">
-            <a class="datos" href="Apellido">Apellido</a>
-            <input class="controls" type="text" name="Apellido" id="Apellido" placeholder="">
-            <a class="datos" href="Dieccion">Direccion</a>
-            <input class="controls" type="text" name="Direccion" id="Direccion" placeholder="">
-            <a class="datos" href="Telefono">Telefono</a>
-            <input class="controls" type="Telefono" name="Telefono" id="Telefono" placeholder="">
-            <a class="datos" href="Email">Email</a>
-            <input class="controls" type="Email" name="Email" id="Email" placeholder="">
+            <label for="Nombre">Nombre</label>            
+            <input class="controls" type="text" name="Nombre" id="Nombre" placeholder="Gimena">
+
+            <label for="Apellido">Apellido</label>
+            <input class="controls" type="text" name="Apellido" id="Apellido" placeholder="Martinez">
+
+            <label for="Direccion">Direccion</label>
+            <input class="controls" type="text" name="Direccion" id="Direccion" placeholder="154 n5632 La Plata">
+
+            <label for="Telefono">Telefono</label>            
+            <input class="controls" type="Telefono" name="Telefono" id="Telefono" placeholder="1156892456">
+
+            <label for="Correo">Email</label>            
+            <input class="controls" type="Email" name="Email" id="Email" placeholder="gime_martinez@gmail.com">
         </div>
 
         <div class="ReservaExitosa">
-            <h2>Su consulta fue resevada</h2>
+            <h2>Su consulta fue reservada</h2>
         </div>
 
         <div class="MinutaConsulta">
             <p>
-                Usted solicito asistencia Remota con carácter Urgente, será contactado por Pepe Suarez el dia 10/4/23
+                Usted solicitó asistencia Remota con carácter Urgente, será contactado por Gustavo el dia 17/4/23, a las 14hs.
             </p>
         </div>
 
@@ -72,18 +76,20 @@
             <p>
                 Nos contactaremos por la plataforma Google Meets, le dejamos el enlace a continuación:
             </p>
-            <a href="link">https://meet.google.com/tbo-dbpm-znk</a>
         </div>
+
+        <a href="link" class="meet">https://meet.google.com/tbo-dbpm-znk</a>
+        
         <div class="cancelar">
             <p>
                 En caso de no poder asistir a la reunion solicitada, por favor comunicarse 24hs antes al 123456789
             </p>
         </div>
 
-        <div class="btnform">
+        <section class="btn">
         <input class="btnCancelar" id="btnCancelar" type="submit" value="Cancelar">
         <input class="btnExport" id="btnExport" type="submit" value="Export PDF">
-        </div>
+        </section>
         
     </section>
     </main>
