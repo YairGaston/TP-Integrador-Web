@@ -1,12 +1,128 @@
 /* style del form 3 pasos :) */
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
-  text-decoration: none;
+   /* Estilos para las pestañas */
+  
+   .tab2, .tab3 {
+    display: none;
+  }
+
+  .tab1, .tab2, .tab3 {
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-size: large;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-top: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(170, 170, 248);
+    margin: 0;
+    font-size: 16px;
+    padding: 0;
+  }
+   
+  h1 {
+      text-align: center;
+      font-family: 'Times New Roman', Times, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      word-spacing: 1px;
+      text-decoration: none;
+      text-transform: uppercase;
+  }
+  
+  .Pres {
+      display: inline-block;
+      width: 45%;
+      height: 15%;
+      vertical-align: top; 
+      margin: 10px;
+      border-width: 15px;  
+      border-style: none;
+      padding: 20px;
+  }
+
+  .Cons {
+      display: inline-block;
+      width: 45%; 
+      height: 15%;
+      vertical-align: top; 
+      margin: 10px; 
+      border-width: 15px;
+      border-style: none; 
+      padding: 20px;
+  }
+
+  .profesional {
+    display: inline-flex;
+    margin-top: 15px;
+    margin-left: 30px;
+    height: 3%;
+  } 
+
+  .Fech {
+    display: block;
+    margin-top: 15px; 
+    margin-left: 30px;
+    height: 3%;
+  } 
+
+   /* Estilos para el botón de siguiente */
+        
+.btnAtras {
+    float: left;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
 }
+
+ .btnSigUno {
+    float: right;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    }
+
+.btnSigDos {
+    float: right;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    }  
+
+.btnAnterior {
+    float: left;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    } 
+  
+.btnEnviar {
+    float: right;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+     border: none;
+     cursor: pointer;
+    }
+       
+  
+    /* estilos integrados */
 :root{
     --casiBlanco: aliceblue;
     --CasiBlancoTransparente: rgba(253,253,253,70%);
@@ -300,42 +416,5 @@ header{
         right:2rem;
         margin-top: -9rem;
     }
-}
-/* style del form 3 pasos :) */
+}  
 
-h1 {
-  text-align: center;
-  font-variant: small-caps;
-  font-size: 30px;
-  letter-spacing: 1px;
-  vertical-align: super;
-  margin-left: 40px;
-  margin-right: 40px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 30px;
-  padding-bottom: 20px;
-  padding-top: 30px;
-  background-color: rgb(92, 92, 198);
-}
-  */  
-   
-   
-   
-   /* Estilos para las pestañas */
-  
-
-        .tab2, .tab3 {
-          display: none;
-        }
-        
-        
-  
-        /* Estilos para el botón de siguiente */
-        .btn {
-          background-color: #4CAF50;
-          color: #fff;
-          padding: 10px 20px;
-          border: none;
-          cursor: pointer;
-        }
