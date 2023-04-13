@@ -21,5 +21,5 @@ function prevStep() {
 
 function submitForm() {
   // Lógica para enviar el formulario
-  alert("Le Agradecemos se confianza. Formulario enviado");
+  alert("Le Agradecemos su confianza. Formulario enviado");
 }

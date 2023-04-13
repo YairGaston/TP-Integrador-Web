@@ -7,6 +7,8 @@
   }
 
   .tab1, .tab2, .tab3 {
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-size: large;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 50px;
@@ -71,8 +73,56 @@
     margin-left: 30px;
     height: 3%;
   } 
-  
 
+   /* Estilos para el botón de siguiente */
+        
+.btnAtras {
+    float: left;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+ .btnSigUno {
+    float: right;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    }
+
+.btnSigDos {
+    float: right;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    }  
+
+.btnAnterior {
+    float: left;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    } 
+  
+.btnEnviar {
+    float: right;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+     border: none;
+     cursor: pointer;
+    }
+       
+  
+    /* estilos integrados */
 :root{
     --casiBlanco: aliceblue;
     --CasiBlancoTransparente: rgba(253,253,253,70%);
@@ -367,12 +417,4 @@ header{
         margin-top: -9rem;
     }
 }  
- /* Estilos para el botón de siguiente */
-        
- .btn {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    }
+
