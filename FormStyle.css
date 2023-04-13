@@ -1,4 +1,13 @@
 /* style del form 3 pasos :) */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
 
    /* Estilos para las pestañas */
   
@@ -7,7 +16,7 @@
   }
 
   .tab1, .tab2, .tab3 {
-    font-family: 'Times New Roman', Times, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: large;
     padding-left: 30px;
     padding-right: 30px;
@@ -21,8 +30,8 @@
 
   body {
     width: 100vw;
-    height: 100vh;
-    background-color: rgb(170, 170, 248);
+    height: 90vh;
+    background-color: rgb(7, 47, 105,70%);
     margin: 0;
     font-size: 16px;
     padding: 0;
@@ -30,7 +39,7 @@
    
   h1 {
       text-align: center;
-      font-family: 'Times New Roman', Times, sans-serif;
+      font-family: 'Open Sans', sans-serif;
       font-weight: 700;
       font-style: normal;
       word-spacing: 1px;
@@ -38,46 +47,62 @@
       text-transform: uppercase;
   }
   
-  .Pres {
+  fieldset {
       display: inline-block;
-      width: 45%;
-      height: 15%;
-      vertical-align: top; 
-      margin: 10px;
+      vertical-align: 5%; 
+      margin: 3%; 
+      width: 40%;
+      height: 25%;
       border-width: 15px;  
       border-style: none;
-      padding: 20px;
+      padding: 2%;
   }
 
-  .Cons {
-      display: inline-block;
-      width: 45%; 
-      height: 15%;
-      vertical-align: top; 
-      margin: 10px; 
-      border-width: 15px;
-      border-style: none; 
-      padding: 20px;
-  }
+/* .Pres {
+    margin-left: 10%;
+}
+
+.Cons {
+    margin-right: 10%;
+} */
 
   .profesional {
     display: inline-flex;
     margin-top: 15px;
     margin-left: 30px;
-    height: 3%;
+    height: 5%;
   } 
 
   .Fech {
     display: block;
     margin-top: 15px; 
     margin-left: 30px;
-    height: 3%;
+    height: 5%;
   } 
+
+  /* pagina Dos */
+
+  .SoliCotiz {
+    width: 100vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+
+.inputContainer {
+    border: none;
+    padding: 1rem 0;
+    border-bottom: 1px solid #3b3b4f;
+    }
+      
 
    /* Estilos para el botón de siguiente */
         
 .btnAtras {
     float: left;
+    margin-top: 20px;
+    margin-bottom: 25px;
     background-color: #4CAF50;
     color: #fff;
     padding: 10px 20px;
@@ -87,6 +112,8 @@
 
  .btnSigUno {
     float: right;
+    margin-top: 20px;
+    margin-bottom: 25px;
     background-color: #4CAF50;
     color: #fff;
     padding: 10px 20px;
@@ -96,6 +123,8 @@
 
 .btnSigDos {
     float: right;
+    margin-top: 20px;
+    margin-bottom: 25px;
     background-color: #4CAF50;
     color: #fff;
     padding: 10px 20px;
@@ -105,6 +134,8 @@
 
 .btnAnterior {
     float: left;
+    margin-top: 20px;
+    margin-bottom: 25px;
     background-color: #4CAF50;
     color: #fff;
     padding: 10px 20px;
@@ -114,11 +145,13 @@
   
 .btnEnviar {
     float: right;
+    margin-top: 20px;
+    margin-bottom: 25px;
     background-color: #4CAF50;
     color: #fff;
     padding: 10px 20px;
-     border: none;
-     cursor: pointer;
+    border: none;
+    cursor: pointer;
     }
        
   

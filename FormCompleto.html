@@ -13,30 +13,32 @@
 </head>
 
 <header>
-    <nav>
+  <nav>
       <div class="encabezadoFijo">
-      <div class="logo">
-          <a href="./index.html">
-            <img class="favicon" src="./img/favicon.svg" alt="Icono">
+          <div class="logo">
+              <a href="./index.html">
+              <img class="favicon" src="./img/favicon.svg" alt="Icono">
               <h2 >DevScrum</h2>
           </a>
-        </div>
+          </div>
+
           <div class="enlaces">
               <a class="botonConBorde" href="./pages/contacto.html">CONTÁCTANOS</a>
-              <a href="./index.html#nosotros">NOSOTROS</a>
-              <a href="./index.html#soluciones">SOLUCIONES</a>
-              <a href="./index.html#oficinas">OFICINAS</a>
+              <a href="#nosotros">NOSOTROS</a>
+              <a href="#soluciones">SOLUCIONES</a>
+              <a href="#oficinas">OFICINAS</a>
               <a class="textoNegrita" href="./FormCompleto.html">SOLICITAR REUNIÓN</a>
           </div>
-            <button class="btn-menu">
-                <i class="bi bi-list"></i>
-              </button>
-        </div>
-    </nav>
-  </header>
+          <button class="btn-menu">
+              <i class="bi bi-list"></i>
+          </button>
+      </div>
+  </nav>
+</header>
 
 <body>
   <!-- primera pagina -->
+  <main>
     <div class="tab1" id="paso1">
         <h1>Con el fin de brindar una rápida respuesta y solución a nuestros clientes, le haremos algunas preguntas y le pediremos algunos datos:</h1>
         <fieldset class="Pres">
@@ -102,7 +104,7 @@
       </div>
 <!-- tercera pagina -->
       <div class="tab3" id="paso3">
-        <h1>Le agradecemos por confiar en “DevSRum¨ y en este equipo que estará a su disposición para la realización de sus proyectos.  </h1>
+        <h1>Le agradecemos por confiar en “DevScrum¨ y en este equipo, que estará a su disposición para la realización de sus proyectos.</h1>
        <div class="text">
         <legend>Su solicitud se ha registrado con éxito. A la brevedad, nos estaremos poniendo en contacto.</legend>
        </div>
@@ -110,10 +112,8 @@
         <button class="btnAnterior" onclick="prevStep()">Anterior</button>
         <button class="btnEnviar" onclick="submitForm()">Enviar</button>
       </div>
+</main>
 
-      <script src="./FormScript.js"></script>
-</body>
-    <main></main>
 <footer>
       <div class="redesSociales">
       <div class="iconos">
@@ -130,4 +130,7 @@
       <p><strong> DevScrum</strong> ©️ 2023 Todos los derechos reservados.</p>
 </footer>
 
+  <script src="./FormScript.js"></script>
+
+</body>
 </html> 
