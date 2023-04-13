@@ -8,6 +8,10 @@
     text-decoration: none;
 }
 
+.btn{
+    display: flex;
+    justify-content: space-between;
+}
 .btnCancelar{
     background-color: var(--temaRosa) ;
     color: var(--casiBlanco);
@@ -18,6 +22,8 @@
     border: none;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25) ;
     text-shadow: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 .btnExport{
     background-color: var(--temaRosa) ;
@@ -29,17 +35,19 @@
     border: none;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25) ;
     text-shadow: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .resumen{
     display: flex;
     flex-direction: column;
     width: 500px;
-    background: aliceblue;
+    background-color: cyan;
     padding: 50px;
     margin: auto;
-    margin-top: 100px;
-    border-radius: 5px;
+    margin-block: 10px;
+    border-radius: 10px;
     font-family: 'Open Sans', sans-serif;
     color: rgba(35, 35, 35);
 }
@@ -47,7 +55,7 @@
     font-size: 30px;
     margin-bottom: 20px;
     font-family: 'Open Sans', sans-serif;
-    color: rgb(16, 228, 204);
+    color: rgba(7, 47, 105,1);
 }
 .datos-finales h2{
     font-size: 25px;
@@ -126,9 +134,7 @@ body::-webkit-scrollbar{
     width:  15px;
 }
 body::-webkit-scrollbar-thumb{
-    background-color: rgba(35, 35, 35, 0.5);
-    
-
+    background-color: rgba(35, 35, 35, 0.5);  
 }
 body::-webkit-scrollbar-thumb:hover{
     background-color: rgba(35, 35, 35);
@@ -140,7 +146,7 @@ body::-webkit-scrollbar-thumb:hover{
     scroll-margin-top: 4ex;
 }
 
-/* bOTONES */
+/* BOTONES Footer */
 .btn-rosa{
     background-color: var(--temaRosa) ;
     color: var(--casiBlanco);
