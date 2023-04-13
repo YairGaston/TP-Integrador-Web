@@ -38,46 +38,44 @@
       text-transform: uppercase;
   }
   
-  .Pres {
+  fieldset {
       display: inline-block;
-      width: 45%;
-      height: 15%;
-      vertical-align: top; 
-      margin: 10px;
+      vertical-align: top;  
+      width: 40%;
+      height: 25%;
       border-width: 15px;  
       border-style: none;
       padding: 20px;
   }
 
-  .Cons {
-      display: inline-block;
-      width: 45%; 
-      height: 15%;
-      vertical-align: top; 
-      margin: 10px; 
-      border-width: 15px;
-      border-style: none; 
-      padding: 20px;
-  }
+.Pres {
+    margin-left: 10%;
+}
+
+.Cons {
+    margin-left: 1%;
+}
 
   .profesional {
     display: inline-flex;
     margin-top: 15px;
     margin-left: 30px;
-    height: 3%;
+    height: 5%;
   } 
 
   .Fech {
     display: block;
     margin-top: 15px; 
     margin-left: 30px;
-    height: 3%;
+    height: 5%;
   } 
 
    /* Estilos para el botón de siguiente */
         
 .btnAtras {
     float: left;
+    margin-top: 20px;
+    margin-bottom: 25px;
     background-color: #4CAF50;
     color: #fff;
     padding: 10px 20px;
@@ -87,6 +85,8 @@
 
  .btnSigUno {
     float: right;
+    margin-top: 20px;
+    margin-bottom: 25px;
     background-color: #4CAF50;
     color: #fff;
     padding: 10px 20px;
@@ -96,6 +96,8 @@
 
 .btnSigDos {
     float: right;
+    margin-top: 20px;
+    margin-bottom: 25px;
     background-color: #4CAF50;
     color: #fff;
     padding: 10px 20px;
@@ -105,6 +107,8 @@
 
 .btnAnterior {
     float: left;
+    margin-top: 20px;
+    margin-bottom: 25px;
     background-color: #4CAF50;
     color: #fff;
     padding: 10px 20px;
@@ -114,11 +118,13 @@
   
 .btnEnviar {
     float: right;
+    margin-top: 20px;
+    margin-bottom: 25px;
     background-color: #4CAF50;
     color: #fff;
     padding: 10px 20px;
-     border: none;
-     cursor: pointer;
+    border: none;
+    cursor: pointer;
     }
        
   
