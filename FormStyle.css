@@ -396,6 +396,97 @@ header{
   z-index: 1;
 }
 
+
+/* --Para API dolar */
+
+.apiDolar{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerTipoCotizaciones{
+    /* max-width: 380px; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    gap: 1rem;    
+    /* padding-top: 2rem; */
+}
+.containerCambioOficial,
+.containerCambioBlue{
+    margin-left: 5rem;
+    width: auto;
+    padding: 1rem;
+    background-color: var(--CasiBlancoTransparente);
+    box-shadow: -3px 3px 7px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+    color: var(--temaRosa);
+}
+.containerCambioOficial :hover,
+.containerCambioBlue :hover{
+    transition: 0.5s ease-in-out;
+    filter: drop-shadow(-2px 0px 8px var(--temaRosa));
+    transform: scale(1.2);
+}
+.containerTipoCotizaciones .ahora{
+    text-align: center;padding-bottom: .2rem;
+    font-weight: 400;
+}
+.containerTipoCotizaciones .totalArsAlOficial{
+    font-weight: 500;
+}
+.containerTipoCotizaciones h2{
+    margin-bottom: .5rem;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+.containerTipoCotizaciones p{
+    color: var(--temaVerde);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+.btn-rosa-cotiz{   
+    margin-left: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    max-width: 200px;
+    background-color: var(--temaRosa) ;
+    color: var(--casiBlanco);
+    font-size: 1.2rem;
+    font-weight:600;
+    padding: 0.5em;
+    border-radius: 0.63rem;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: none;
+    text-shadow: 0 1px 10px rgb(0, 0, 0,1);
+}
+.btn-rosa-cotiz:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+    background-color: var(--temaVerde);
+    color: var(--casiBlanco);
+}
+
+
+
+
 /* Media Querys */
 @media screen and (max-width: 1300px ){
     html{
@@ -516,5 +607,10 @@ header{
         cursor: pointer;
     }
 /* ----------------------- */
+
+.containerTipoCotizaciones{
+    flex-direction: column;
+}
+
 }  
 
