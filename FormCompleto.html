@@ -46,7 +46,7 @@
           <label><input id="Presencial" type="radio" name="PresRem" value="Presencial" checked required>Presencial</label>
           <label><input id="Remota" type="radio" name="PresRem" value="Remota" required>Remota</label>
         </fieldset>
-        <fieldset class="Cons">
+        <fieldset class="Pres">
           <legend>Caracter de la consulta:</legend>
           <label><input id="Urgente" type="radio" name="UrgMod" value="Urgente" checked required>Urgente</label>
           <label><input id="Moderado" type="radio" name="UrgMod" value="Moderado" required>Moderado</label>
@@ -60,8 +60,10 @@
               <option value="Gustavo">Gustavo Müller</option>
           </select>
       </div>
-      <label class="Fech" for="fecha">Por favor, elija la fecha:</label>
+      <div class="Fech">
+      <label for="fecha">Por favor, elija la fecha:</label>
 <input class="Fech" type="date" id="fecha" name="fecha">
+      </div>
 
         <button class="btnAtras" onclick="history.back()">Volver Atrás</button>
         <button class="btnSigUno" onclick="nextStep()">Siguiente</button>
@@ -106,8 +108,8 @@
       </div>
 <!-- tercera pagina -->
       <div class="tab3" id="paso3">
-        <h1>Le agradecemos por confiar en “DevScrum¨ y en este equipo, que estará a su disposición para la realización de sus proyectos.</h1>
-       <div class="text">
+        <h1 class="MensFinal">Le agradecemos por confiar en “DevScrum¨ y en este equipo, que estará a su disposición para la realización de sus proyectos.</h1>
+       <div class="RegExito">
         <legend>Su solicitud se ha registrado con éxito. A la brevedad, nos estaremos poniendo en contacto.</legend>
        </div>
 

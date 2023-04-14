@@ -52,34 +52,34 @@
   
   fieldset {
       display: inline-block;
-      vertical-align: 5%; 
-      margin: 3%; 
-      width: 40%;
+      vertical-align: 7%; 
+      margin: 4%; 
+      width: 41%;
       height: 25%;
-      border-width: 15px;  
-      border-style: none;
+      border-style: outset;
+      border-width: 2%;
+      border-color:rgb(0, 0, 0,1);
       padding: 2%;
   }
 
-/* .Pres {
-    margin-left: 10%;
-}
-
-.Cons {
-    margin-right: 10%;
-} */
+  fieldset legend {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+  }
 
   .profesional {
     display: inline-flex;
+    align-items: center;
     margin-top: 15px;
-    margin-left: 30px;
+    margin-left: 30%;
     height: 5%;
   } 
 
   .Fech {
-    display: block;
+    display: inline-flex;
     margin-top: 15px; 
-    margin-left: 30px;
+    margin-left: 30%;
     height: 5%;
   } 
 
@@ -87,16 +87,17 @@
 
   .SoliCotiz {
     width: 100vw;
-    max-width: 500px;
+    max-width: 600px;
     min-width: 300px;
     margin: 0 auto;
     padding-bottom: 2em;
   }
 
 .inputContainer {
+    margin-left: 40%;
+    align-items: center; 
     border: none;
     padding: 1rem 0;
-    border-bottom: 1px solid #3b3b4f;
     }
       
 .NpagDos {
@@ -104,7 +105,7 @@
     margin: 0.5rem 0;
     }    
 textarea {
-    border: 1px; 
+    border: none; 
     color: rgb(207, 249, 245,100%);
     margin: 10px 0 0 0;
     width: 100%;
@@ -118,12 +119,27 @@ textarea {
     font-size: 15px;
 }
 
+/* Pagina Tres */
 
-   /* Estilos para el botón de siguiente */
+.MensFinal {
+  text-align: center;
+  
+}
+
+.RegExito {
+  text-align: center;
+  text-decoration: underline;
+  font-style: normal;
+  font-size: larger;
+  margin-top: 3%;
+
+}
+
+   /* Estilos para los botones Formulario Cotización */
         
 .btnAtras {
     float: left;
-    margin-top: 20px;
+    margin-top: 10%;
     margin-bottom: 25px;
     background-color: #4CAF50;
     color: #fff;
@@ -134,7 +150,7 @@ textarea {
 
  .btnSigUno {
     float: right;
-    margin-top: 20px;
+    margin-top: 10%;
     margin-bottom: 25px;
     background-color: #4CAF50;
     color: #fff;
@@ -145,7 +161,7 @@ textarea {
 
 .btnSigDos {
     float: right;
-    margin-top: 20px;
+    margin-top: 10%;
     margin-bottom: 25px;
     background-color: #4CAF50;
     color: #fff;
@@ -156,7 +172,7 @@ textarea {
 
 .btnAnterior {
     float: left;
-    margin-top: 20px;
+    margin-top: 10%;
     margin-bottom: 25px;
     background-color: #4CAF50;
     color: #fff;
@@ -167,7 +183,7 @@ textarea {
   
 .btnEnviar {
     float: right;
-    margin-top: 20px;
+    margin-top: 10%;
     margin-bottom: 25px;
     background-color: #4CAF50;
     color: #fff;
