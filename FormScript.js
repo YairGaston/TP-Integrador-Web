@@ -72,13 +72,15 @@ for(producto of FiltroTipo){
     const valorReunión = 30.00
     const valorReuniónMoneda = (valorReunión).toLocaleString('us-US',{style: 'currency',currency: 'USD'})
 
-let hora = new Date().getHours();
-let min = new Date().getMinutes();
-let sec = new Date().getSeconds();
-let dia = new Date().getDay()+9;
-let mes = new Date().getMonth()+1; 
-let año = new Date().getFullYear();
-let ahora = dia+"/"+mes+"/"+año+" - "+hora+":"+min+":"+sec;
+    let fecha = new Date();
+
+    let hora = fecha.getHours();
+    let min = fecha.getMinutes();
+    let sec = fecha.getSeconds();
+    let dia = fecha.getDate ();
+    let mes = fecha.getMonth()+1; 
+    let año = fecha.getFullYear();
+    let ahora = dia+"/"+mes+"/"+año+" - "+hora+":"+min+":"+sec;
 
 Moneda1.innerHTML = `
 <div class="containerCambioOficial">
@@ -106,13 +108,15 @@ btnRefresh.addEventListener("click", () =>{
         const valorReunión = 30.00
         const valorReuniónMoneda = (valorReunión).toLocaleString('us-US',{style: 'currency',currency: 'USD'})
 
-    let hora = new Date().getHours();
-    let min = new Date().getMinutes();
-    let sec = new Date().getSeconds();
-    let dia = new Date().getDay()+9;
-    let mes = new Date().getMonth()+1; 
-    let año = new Date().getFullYear();
-    let ahora = dia+"/"+mes+"/"+año+" - "+hora+":"+min+":"+sec;
+        let fecha = new Date();
+
+        let hora = fecha.getHours();
+        let min = fecha.getMinutes();
+        let sec = fecha.getSeconds();
+        let dia = fecha.getDate ();
+        let mes = fecha.getMonth()+1; 
+        let año = fecha.getFullYear();
+        let ahora = dia+"/"+mes+"/"+año+" - "+hora+":"+min+":"+sec;
 
         Moneda1.innerHTML = `
         <div class="containerCambioOficial">
@@ -139,13 +143,15 @@ for(producto of FiltroTipo){
     const valorReunión = 30.00
     const valorReuniónMoneda = (valorReunión).toLocaleString('us-US',{style: 'currency',currency: 'USD'})
 
-let hora = new Date().getHours();
-let min = new Date().getMinutes();
-let sec = new Date().getSeconds();
-let dia = new Date().getDay()+9;
-let mes = new Date().getMonth()+1; 
-let año = new Date().getFullYear();
-let ahora = dia+"/"+mes+"/"+año+" - "+hora+":"+min+":"+sec;
+    let fecha = new Date();
+
+    let hora = fecha.getHours();
+    let min = fecha.getMinutes();
+    let sec = fecha.getSeconds();
+    let dia = fecha.getDate ();
+    let mes = fecha.getMonth()+1; 
+    let año = fecha.getFullYear();
+    let ahora = dia+"/"+mes+"/"+año+" - "+hora+":"+min+":"+sec;
 
 Moneda2.innerHTML = `
 <div class="containerCambioBlue">
@@ -173,13 +179,15 @@ btnRefresh.addEventListener("click", () =>{
         const valorReunión = 30.00
         const valorReuniónMoneda = (valorReunión).toLocaleString('us-US',{style: 'currency',currency: 'USD'})
 
-    let hora = new Date().getHours();
-    let min = new Date().getMinutes();
-    let sec = new Date().getSeconds();
-    let dia = new Date().getDay()+9;
-    let mes = new Date().getMonth()+1; 
-    let año = new Date().getFullYear();
-    let ahora = dia+"/"+mes+"/"+año+" - "+hora+":"+min+":"+sec;
+        let fecha = new Date();
+
+        let hora = fecha.getHours();
+        let min = fecha.getMinutes();
+        let sec = fecha.getSeconds();
+        let dia = fecha.getDate ();
+        let mes = fecha.getMonth()+1; 
+        let año = fecha.getFullYear();
+        let ahora = dia+"/"+mes+"/"+año+" - "+hora+":"+min+":"+sec;
 
         Moneda2.innerHTML = `
         <div class="containerCambioBlue">
