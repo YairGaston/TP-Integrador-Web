@@ -57,23 +57,30 @@ const   nav = document.querySelector("#enlaces");
 
 
                 /* Utilizo API de DolarSi (Oficial y Blue) */
-const URL_JSON = "https://www.dolarsi.com/api/api.php?type=valoresprincipales"
+/*const URL_JSON = "https://www.dolarsi.com/api/api.php?type=valoresprincipales"*/
+const URL_JSON = "https://dolarapi.com/v1/dolares"
 /* Obtengo los elementos del documento */
 const Moneda1 = document.getElementById("Moneda1")
-const Moneda3 = document.getElementById("Moneda2")
+const Moneda2 = document.getElementById("Moneda2")
 const btnRefresh = document.querySelector("#btnRefresh");
 /* Obtengo, transformo, filtro y muestro los datos obtenidos de la API para el dolar oficial */
 fetch (URL_JSON)
 .then(response => response.json())
 .then(data => {
-const FiltroTipo = data.filter(tipo => tipo.casa.nombre.includes ('Dolar Oficial') )
+const FiltroTipo = data.filter(tipo => tipo.nombre.includes ('Oficial') )
 for(producto of FiltroTipo){
 
     const valorReunión = 30.00
-    const valorReuniónMoneda = (valorReunión).toLocaleString('us-US',{style: 'currency',currency: 'USD'})
+    const valorReuniónMoneda =  (valorReunión).toLocaleString('en-US',{style: 'currency',currency: 'USD'})
+    const TotalARS = (producto.venta*valorReunión)
+    
+    const formatter = new Intl.NumberFormat('es-AR', {
+        style: 'currency',
+        minimumFractionDigits: 2,
+        currency: 'ARS',
+      });
 
     let fecha = new Date();
-
     let hora = fecha.getHours();
     let min = fecha.getMinutes();
     let sec = fecha.getSeconds();
@@ -81,15 +88,15 @@ for(producto of FiltroTipo){
     let mes = fecha.getMonth()+1; 
     let año = fecha.getFullYear();
     let ahora = dia+"/"+mes+"/"+año+" - "+hora+":"+min+":"+sec;
-
+    
 Moneda1.innerHTML = `
 <div class="containerCambioOficial">
-        <h2 class="nombreCambio">Cotización  ${producto.casa.nombre}</h2>
+        <h2 class="nombreCambio">Cotización  ${producto.nombre}</h2>
         <p class="ahora">Actualizado: ${ahora}</p>
         <p class="valorReunion">La tarifa de la reunión es de:<strong> ${valorReuniónMoneda}</strong></p>
-        <p class="compraOficial">Cotización Compra:<strong><strong> $ ${producto.casa.compra }</strong></p> 
-        <p class="ventaOficial">Cotización venta:<strong> $ ${producto.casa.venta}</strong> </p>
-        <p class="totalArsAlOficial">Total tarifa en ARS (Pesos):<strong> $ ${ parseFloat( ((producto.casa.venta).replace(',','.'))*valorReunión).toFixed(2).replace('.',',')}</strong> </p>
+        <p class="compraOficial">Cotización Compra:<strong> ${formatter.format(producto.compra )}</strong></p> 
+        <p class="ventaOficial">Cotización venta:<strong> ${formatter.format(producto.venta)}</strong> </p>
+        <p class="totalArsAlOficial">Total tarifa en ARS (Pesos):<strong> ${ formatter.format(TotalARS)}</strong> </p>
         </div>
         `
     }}
@@ -102,14 +109,20 @@ btnRefresh.addEventListener("click", () =>{
     fetch (URL_JSON)
     .then(response => response.json())
     .then(data => {
-    const FiltroTipoOficial = data.filter(tipo => tipo.casa.nombre.includes ('Dolar Oficial') )
+    const FiltroTipoOficial = data.filter(tipo => tipo.nombre.includes ('Oficial') )
     for(producto of FiltroTipoOficial){
 
         const valorReunión = 30.00
-        const valorReuniónMoneda = (valorReunión).toLocaleString('us-US',{style: 'currency',currency: 'USD'})
-
+        const valorReuniónMoneda = (valorReunión).toLocaleString('en-US',{style: 'currency',currency: 'USD'})
+        const TotalARS = (producto.venta*valorReunión)
+    
+        const formatter = new Intl.NumberFormat('es-AR', {
+            style: 'currency',
+            minimumFractionDigits: 2,
+            currency: 'ARS',
+          });
+    
         let fecha = new Date();
-
         let hora = fecha.getHours();
         let min = fecha.getMinutes();
         let sec = fecha.getSeconds();
@@ -120,13 +133,13 @@ btnRefresh.addEventListener("click", () =>{
 
         Moneda1.innerHTML = `
         <div class="containerCambioOficial">
-        <h2 class="nombreCambio">Cotización  ${producto.casa.nombre}</h2>
+        <h2 class="nombreCambio">Cotización  ${producto.nombre}</h2>
         <p class="ahora">Actualizado: ${ahora}</p>
         <p class="valorReunion">La tarifa de la reunión es de:<strong> ${valorReuniónMoneda}</strong></p>
-        <p class="compraOficial">Cotización Compra:<strong><strong> $ ${producto.casa.compra }</strong></p> 
-        <p class="ventaOficial">Cotización venta:<strong> $ ${producto.casa.venta}</strong> </p>
-        <p class="totalArsAlOficial">Total tarifa en ARS (Pesos):<strong> $ ${ parseFloat( ((producto.casa.venta).replace(',','.'))*valorReunión).toFixed(2).replace('.',',')}</strong> </p>
-                </div>
+        <p class="compraOficial">Cotización Compra:<strong> ${formatter.format(producto.compra )}</strong></p> 
+        <p class="ventaOficial">Cotización venta:<strong> ${formatter.format(producto.venta)}</strong> </p>
+        <p class="totalArsAlOficial">Total tarifa en ARS (Pesos):<strong> ${ formatter.format(TotalARS)}</strong> </p>
+        </div>
         `
     }}
     )
@@ -137,14 +150,20 @@ btnRefresh.addEventListener("click", () =>{
 fetch (URL_JSON)
 .then(response => response.json())
 .then(data => {
-const FiltroTipo = data.filter(tipo => tipo.casa.nombre.includes ('Dolar Blue') )
+const FiltroTipo = data.filter(tipo => tipo.nombre.includes ('Blue') )
 for(producto of FiltroTipo){
 
     const valorReunión = 30.00
-    const valorReuniónMoneda = (valorReunión).toLocaleString('us-US',{style: 'currency',currency: 'USD'})
+    const valorReuniónMoneda = (valorReunión).toLocaleString('en-US',{style: 'currency',currency: 'USD'})
+    const TotalARS = (producto.venta*valorReunión)
+    
+    const formatter = new Intl.NumberFormat('es-AR', {
+        style: 'currency',
+        minimumFractionDigits: 2,
+        currency: 'ARS',
+      });
 
     let fecha = new Date();
-
     let hora = fecha.getHours();
     let min = fecha.getMinutes();
     let sec = fecha.getSeconds();
@@ -155,12 +174,12 @@ for(producto of FiltroTipo){
 
 Moneda2.innerHTML = `
 <div class="containerCambioBlue">
-<h2 class="nombreCambio">Cotización  ${producto.casa.nombre}</h2>
+<h2 class="nombreCambio">Cotización  ${producto.nombre}</h2>
 <p class="ahora">Actualizado: ${ahora}</p>
 <p class="valorReunion">La tarifa de la reunión es de:<strong> ${valorReuniónMoneda}</strong></p>
-<p class="compraOficial">Cotización Compra:<strong><strong> $ ${producto.casa.compra }</strong></p> 
-<p class="ventaOficial">Cotización venta:<strong> $ ${producto.casa.venta}</strong> </p>
-<p class="totalArsAlOficial">Total tarifa en ARS (Pesos):<strong> $ ${ parseFloat( ((producto.casa.venta).replace(',','.'))*valorReunión).toFixed(2).replace('.',',')}</strong> </p>
+        <p class="compraOficial">Cotización Compra:<strong> ${formatter.format(producto.compra )}</strong></p> 
+        <p class="ventaOficial">Cotización venta:<strong> ${formatter.format(producto.venta)}</strong> </p>
+<p class="totalArsAlOficial">Total tarifa en ARS (Pesos):<strong> ${ formatter.format(TotalARS)}</strong> </p>
         </div>
         `
     }}
@@ -173,14 +192,20 @@ btnRefresh.addEventListener("click", () =>{
     fetch (URL_JSON)
     .then(response => response.json())
     .then(data => {
-    const FiltroTipoOficial = data.filter(tipo => tipo.casa.nombre.includes ('Dolar Blue') )
+    const FiltroTipoOficial = data.filter(tipo => tipo.nombre.includes ('Blue') )
     for(producto of FiltroTipoOficial){
 
         const valorReunión = 30.00
-        const valorReuniónMoneda = (valorReunión).toLocaleString('us-US',{style: 'currency',currency: 'USD'})
-
+        const valorReuniónMoneda = (valorReunión).toLocaleString('en-US',{style: 'currency',currency: 'USD'})
+        const TotalARS = (producto.venta*valorReunión)
+    
+        const formatter = new Intl.NumberFormat('es-AR', {
+            style: 'currency',
+            minimumFractionDigits: 2,
+            currency: 'ARS',
+          });
+    
         let fecha = new Date();
-
         let hora = fecha.getHours();
         let min = fecha.getMinutes();
         let sec = fecha.getSeconds();
@@ -191,12 +216,12 @@ btnRefresh.addEventListener("click", () =>{
 
         Moneda2.innerHTML = `
         <div class="containerCambioBlue">
-        <h2 class="nombreCambio">Cotización  ${producto.casa.nombre}</h2>
+        <h2 class="nombreCambio">Cotización  ${producto.nombre}</h2>
         <p class="ahora">Actualizado: ${ahora}</p>
         <p class="valorReunion">La tarifa de la reunión es de:<strong> ${valorReuniónMoneda}</strong></p>
-        <p class="compraOficial">Cotización Compra:<strong><strong> $ ${producto.casa.compra }</strong></p> 
-        <p class="ventaOficial">Cotización venta:<strong> $ ${producto.casa.venta}</strong> </p>
-        <p class="totalArsAlOficial">Total tarifa en ARS (Pesos):<strong> $ ${ parseFloat( ((producto.casa.venta).replace(',','.'))*valorReunión).toFixed(2).replace('.',',')}</strong> </p>
+        <p class="compraOficial">Cotización Compra:<strong> ${formatter.format(producto.compra )}</strong></p> 
+        <p class="ventaOficial">Cotización venta:<strong> ${formatter.format(producto.venta)}</strong> </p>
+        <p class="totalArsAlOficial">Total tarifa en ARS (Pesos):<strong> ${ formatter.format(TotalARS)}</strong> </p>
                 </div>
         `
     }}

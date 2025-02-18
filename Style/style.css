@@ -222,7 +222,7 @@ header{
     flex-direction: column;
     gap: 5rem;
     box-shadow: 0px 6px 11px 5px rgba(0, 0, 0, 0.25);
-    background-image: linear-gradient(rgba(94, 52, 52, 0.55),rgba(94, 52, 52, 0.55)), url(https://i.ibb.co/1KZ0s8S/img-Presentacion.jpg);
+    background-image: linear-gradient(rgba(94, 52, 52, 0.55),rgba(94, 52, 52, 0.55)), url(../img/imgPresentacion.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -283,7 +283,7 @@ header{
     justify-content: center;
     gap: 4vh;
     box-shadow: 0px 6px 11px 5px rgba(0, 0, 0, 0.25);
-    background-image: linear-gradient(rgba(241, 241, 241, 0.5),rgba(241, 241, 241, 0.5)), url(https://i.ibb.co/whvLmZm/img-Nosotros.png);
+    background-image: linear-gradient(rgba(241, 241, 241, 0.5),rgba(241, 241, 241, 0.5)), url(../img/imgNosotros.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -359,7 +359,7 @@ header{
 }
 .imgColaborador1{
     
-    background-image: url(https://i.ibb.co/Lhb0ZKf/Colaborador1.jpg);
+    background-image: url(../img/Colaborador1.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -370,7 +370,7 @@ header{
     margin-bottom: 2rem;
 }
 .imgColaborador2{
-    background-image: url(https://i.ibb.co/4SsXNRb/Colaborador2.jpg);
+    background-image: url(../img/Colaborador2.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -381,7 +381,7 @@ header{
     margin-bottom: 2rem;
 }
 .imgColaborador3{
-    background-image: url(https://i.ibb.co/rtN3ksH/Colaborador3.jpg);
+    background-image: url(../img/Colaborador3.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -427,7 +427,7 @@ header{
     text-shadow: 0 0 8px rgba(214, 211, 211, 0.8);
 }
 .seccionSoluciones{
-    background: linear-gradient(rgba(241, 241, 241, 0.4),rgba(241, 241, 241, 0.4)),url(https://i.ibb.co/F8HywcY/img-Soluciones.jpg);
+    background: linear-gradient(rgba(241, 241, 241, 0.4),rgba(241, 241, 241, 0.4)),url(..//Img/imgSoluciones.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -442,7 +442,7 @@ header{
 }
 .imgSolucion1{
     
-    background-image: url(https://i.ibb.co/sqQ9WJ8/solucion1.png);
+    background-image: url(../img/solucion1.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -453,7 +453,7 @@ header{
     margin-bottom: 2rem;
 }
 .imgSolucion2{
-    background-image: url(https://i.ibb.co/gRKYFLf/img-Solucion2.png);
+    background-image: url(../img/imgSolucion2.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -464,7 +464,7 @@ header{
     margin-bottom: 2rem;
 }
 .imgSolucion3{
-    background-image: url(https://i.ibb.co/C0ZGCHq/solucion3.jpg);
+    background-image: url(../img/solucion3.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
