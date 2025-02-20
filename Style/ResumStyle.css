@@ -157,16 +157,25 @@ body::-webkit-scrollbar-thumb:hover{
     font-size: 1.2rem;
     font-weight:600;
     padding: 0.5em;
-    border-radius: 0.63rem;
+    border-radius: 3.5px;
     border: none;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     text-shadow: none;
     text-shadow: 0 1px 10px rgb(0, 0, 0,1);
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+    -ms-transition: .5s, color .10s;
+    -o-transition: .5s, color .10s;
+    -webkit-border-radius: 3.5px;
+    -moz-border-radius: 3.5px;
+    -ms-border-radius: 3.5px;
+    -o-border-radius: 3.5px;
 }
 .btn-rosa:hover{
     transform: scale(1.1);
     transition: 0.5s ease-in-out;
-    background-color: var(--temaVerde);
+    /* background-color: var(--temaVerde); */
     color: var(--casiBlanco);
 }
 
@@ -277,13 +286,16 @@ header{
     font-size: 1rem;
     font-weight:lighter;
     padding: .5em;
-    /* padding: 0px; */
     border: px solid var(--temaVerde);
     border-radius: .625rem;
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+    -ms-transition: .5s, color .10s;
+    -o-transition: .5s, color .10s;
 }
 .enlaces a:hover{
     transition: 0.5s ease-in-out;
-    /* background-color: var(--temaVerdeTransparente); */
     filter: drop-shadow(0px 0px 15px var(--temaRosa));
     color: var(--casiBlanco);
     transform: scale(1.1);
