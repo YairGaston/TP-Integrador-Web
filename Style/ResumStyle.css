@@ -206,18 +206,23 @@ footer p{
 .iconos img{
     width: 3rem;
     height: 3rem;
-    /* filter: drop-shadow(-2px 0px 8px var(--temaVerdeTransparente)); */
 }
-.iconos a{
+
+.iconos a img{
     background-color:transparent;
-    filter: drop-shadow(0px 0px 1px var(--casiBlanco));
+    filter: drop-shadow(0.2px 0.2px 0.2px var(--casiBlanco));
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+    -ms-transition: .5s, color .10s;
+    -o-transition: .5s, color .10s;
+    -webkit-filter: drop-shadow(0.2px 0.2px 0.2px var(--casiBlanco));
 }
 .iconos a img:hover{
-    /* height: 5rem;
-    width: 5rem; */
     transition: 0.5s ease-in-out;
-    filter: drop-shadow(-2px 0px 8px var(--temaRosa));
+    filter: drop-shadow(0px 0.5px 0.5px var(--casiBlanco));
     transform: scale(1.2);
+    -webkit-filter: drop-shadow(0px 0.5px 0.5px var(--casiBlanco));
 }
 
 /* HEADER */
