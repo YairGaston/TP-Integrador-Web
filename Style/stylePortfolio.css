@@ -382,7 +382,7 @@ line-height: 150%;
 .imgCircularColaborador{
     top: 40rem;
     left: calc( 50% - 11rem);
-    position:absolute;;
+    position:absolute;
     z-index: 0;
     border:  .187rem solid var(--casiBlanco);
     border-radius: 50%;
@@ -393,7 +393,15 @@ line-height: 150%;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+    -ms-transition: .5s, color .10s;
+    -o-transition: .5s, color .10s;
 }
+
+
+              
 .sobresalirImgCircular :hover{
     top: calc( 40rem - 2rem);
     left: calc( 50% - 13rem);
@@ -474,6 +482,7 @@ line-height: 150%;
     box-shadow: -3px 3px 7px 3px rgba(0, 0, 0, 0.25);
     border-radius: 1rem;
     color: var(--casiNegro);
+    padding-bottom: 0.3rem;
 }
 .solucion2{
     height: 32rem;
@@ -481,6 +490,7 @@ line-height: 150%;
     background-color:  var(--CasiBlancoTransparente);
     box-shadow: -3px 3px 7px 3px rgba(0, 0, 0, 0.25);
     border-radius: 1rem;
+    padding-bottom: 0.3rem;
 }
 .solucion3{
     height: 32rem;
@@ -488,6 +498,7 @@ line-height: 150%;
     background-color:  var(--CasiBlancoTransparente);
     box-shadow: -3px 3px 7px 3px rgba(0, 0, 0, 0.25);
     border-radius: 1rem;
+    padding-bottom: 0.3rem;
 }
 .imgSolucion1{
     
@@ -500,18 +511,27 @@ line-height: 150%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 1rem;
     margin-bottom: 2rem;
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+    -ms-transition: .5s, color .10s;
+    -o-transition: .5s, color .10s;
 }
 .imgSolucion2{
     background-image: url(../img/solucion2.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    
     width:100%;
     height: 12rem;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 1rem;
     margin-bottom: 2rem;
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+    -ms-transition: .5s, color .10s;
+    -o-transition: .5s, color .10s;
 }
 .imgSolucion3{
     background-image: url(../img/solucion3.jpg);
@@ -523,7 +543,11 @@ line-height: 150%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 1rem;
     margin-bottom: 2rem;
-
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+    -ms-transition: .5s, color .10s;
+    -o-transition: .5s, color .10s;
 }
 .sobresalir :hover{
     height: 50%;
